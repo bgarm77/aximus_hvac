@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>VRF Service Report — Aximus HVAC Solutions</title>
+<style>
+  @page { size: Letter; margin: 0.5in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #0A2147;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    margin: 0;
+    background: #FFF;
+  }
+  h1, h2, h3 { font-family: 'Sora', 'Inter', sans-serif; color: #0A2147; margin: 0; }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #124E88;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  .brand-mark {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo-badge {
+    width: 54px; height: 54px;
+    background: linear-gradient(135deg, #124E88 0%, #3288C0 100%);
+    border-radius: 12px;
+    color: #FFF;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 22pt;
+    letter-spacing: -0.5px;
+  }
+  .brand-name { font-size: 16pt; font-weight: 700; color: #0A2147; }
+  .brand-tag { font-size: 9pt; color: #264261; letter-spacing: 0.5px; text-transform: uppercase; }
+  .doc-title { text-align: right; }
+  .doc-title h1 { font-size: 16pt; color: #124E88; }
+  .doc-title .sub { font-size: 9pt; color: #264261; margin-top: 4px; }
+  .report-id {
+    display: inline-block;
+    background: #A9CCE3;
+    color: #0A2147;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 8.5pt;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    background: #F5FAFF;
+    border: 1px solid #D7E2EE;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+  }
+  .meta-grid .cell .label { font-size: 8pt; color: #7899AD; text-transform: uppercase; letter-spacing: 0.6px; font-weight: 600; }
+  .meta-grid .cell .value { font-size: 10.5pt; color: #0A2147; font-weight: 600; margin-top: 2px; }
+
+  section { margin-bottom: 16px; }
+  section h2 {
+    font-size: 11.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #124E88;
+    border-left: 4px solid #3288C0;
+    padding-left: 10px;
+    margin-bottom: 8px;
+  }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card {
+    border: 1px solid #D7E2EE;
+    border-radius: 10px;
+    padding: 12px 14px;
+    background: #FFF;
+  }
+  .card h3 { font-size: 10pt; color: #0A2147; margin-bottom: 6px; }
+  .kv { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px dashed #E5ECF3; font-size: 10pt; }
+  .kv:last-child { border-bottom: none; }
+  .kv .k { color: #264261; }
+  .kv .v { color: #0A2147; font-weight: 600; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+  thead th {
+    background: #0A2147; color: #FFF;
+    text-align: left; padding: 8px 10px;
+    font-family: 'Sora', sans-serif; font-size: 9.5pt; font-weight: 600;
+  }
+  tbody td { padding: 7px 10px; border-bottom: 1px solid #E5ECF3; vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #F5FAFF; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .badge.normal { background: #DCF5E4; color: #0E6B37; }
+  .badge.attention { background: #FFF0CC; color: #8A5A00; }
+  .badge.critical { background: #FDD8D8; color: #A81919; }
+
+  ul.clean { margin: 0; padding-left: 18px; }
+  ul.clean li { margin-bottom: 4px; }
+
+  .sign-block {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid #D7E2EE;
+  }
+  .sig-line {
+    border-bottom: 1.5px solid #0A2147;
+    height: 36px;
+    margin-bottom: 4px;
+  }
+  .sig-label { font-size: 8.5pt; color: #7899AD; text-transform: uppercase; letter-spacing: 0.6px; }
+
+  .footer {
+    margin-top: 22px;
+    padding-top: 10px;
+    border-top: 2px solid #124E88;
+    font-size: 8.5pt;
+    color: #264261;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer strong { color: #0A2147; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="brand-mark">
+    <div class="logo-badge">A</div>
+    <div>
+      <div class="brand-name">AXIMUS HVAC Solutions</div>
+      <div class="brand-tag">VRV / VRF Specialists — California</div>
+    </div>
+  </div>
+  <div class="doc-title">
+    <h1>VRF Service Report</h1>
+    <div class="sub">Scheduled Preventive Maintenance Visit</div>
+    <div class="report-id">Report #AX-2026-0412-0317</div>
+  </div>
+</div>
+
+<div class="meta-grid">
+  <div class="cell"><div class="label">Service Date</div><div class="value">April 12, 2026</div></div>
+  <div class="cell"><div class="label">Technician</div><div class="value">Marcus Delgado, NATE-Certified</div></div>
+  <div class="cell"><div class="label">Service Type</div><div class="value">Quarterly PMA Inspection</div></div>
+  <div class="cell"><div class="label">Arrival</div><div class="value">08:42 PDT</div></div>
+  <div class="cell"><div class="label">Departure</div><div class="value">12:15 PDT</div></div>
+  <div class="cell"><div class="label">On-Site Duration</div><div class="value">3h 33m</div></div>
+</div>
+
+<div class="two-col">
+  <section>
+    <h2>Client Information</h2>
+    <div class="card">
+      <div class="kv"><span class="k">Building</span><span class="v">Bayfront Commerce Center</span></div>
+      <div class="kv"><span class="k">Address</span><span class="v">1450 Harbor Way, Oakland, CA 94607</span></div>
+      <div class="kv"><span class="k">Contact</span><span class="v">Jennifer Park, Facility Director</span></div>
+      <div class="kv"><span class="k">Phone</span><span class="v">(510) 555-0142</span></div>
+      <div class="kv"><span class="k">PMA Contract</span><span class="v">AX-PMA-2025-118</span></div>
+    </div>
+  </section>
+  <section>
+    <h2>System Information</h2>
+    <div class="card">
+      <div class="kv"><span class="k">Manufacturer</span><span class="v">Daikin</span></div>
+      <div class="kv"><span class="k">System</span><span class="v">VRV IV Heat Recovery</span></div>
+      <div class="kv"><span class="k">Model</span><span class="v">RXYQ10TY1</span></div>
+      <div class="kv"><span class="k">Serial Number</span><span class="v">DK24-58271</span></div>
+      <div class="kv"><span class="k">Indoor Units</span><span class="v">14 (FXFQ / FXMQ mix)</span></div>
+      <div class="kv"><span class="k">Install Date</span><span class="v">September 2022</span></div>
+    </div>
+  </section>
+</div>
+
+<section>
+  <h2>Inspection Checklist</h2>
+  <table>
+    <thead>
+      <tr><th style="width:42%">Item</th><th style="width:25%">Reading / Condition</th><th style="width:13%">Spec</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Refrigerant suction pressure</td><td>128 psig</td><td>120–135</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Refrigerant discharge pressure</td><td>412 psig</td><td>380–430</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Superheat (avg, 14 IDUs)</td><td>9.2°F</td><td>8–12</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Subcooling</td><td>14.8°F</td><td>12–16</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Outdoor ambient / supply air ΔT</td><td>18.4°F</td><td>≥ 16</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Filter condition (all IDUs)</td><td>2 of 14 loaded &gt;70%</td><td>Clean</td><td><span class="badge attention">Attention</span></td></tr>
+      <tr><td>Electrical connections — torque &amp; thermal</td><td>All within spec; 1 lug at 88°F</td><td>—</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Condenser coil cleanliness</td><td>Light debris, south face</td><td>Clean</td><td><span class="badge attention">Attention</span></td></tr>
+      <tr><td>Error code history (last 90 days)</td><td>U4 × 3 events on BS box #2</td><td>0</td><td><span class="badge critical">Critical</span></td></tr>
+      <tr><td>Intelligent Touch Controller verification</td><td>Firmware 4.2.1, schedules confirmed</td><td>Current</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Drain pan &amp; condensate lines</td><td>Clear; pan tabs OK</td><td>Clear</td><td><span class="badge normal">Normal</span></td></tr>
+      <tr><td>Vibration isolators &amp; mounts</td><td>Secure, no fatigue</td><td>—</td><td><span class="badge normal">Normal</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Findings</h2>
+  <table>
+    <thead>
+      <tr><th style="width:14%">Severity</th><th style="width:26%">Item</th><th>Details</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="badge critical">Critical</span></td>
+        <td>U4 communication faults — BS box #2 (3rd floor east)</td>
+        <td>Three U4 events logged between Feb 18 and Mar 31. Cause traced to a chafed F1/F2 transmission wire at a sheet-metal pass-through. Signal integrity currently marginal; escalation to total loss of zone control is likely within 30–60 days.</td>
+      </tr>
+      <tr>
+        <td><span class="badge attention">Attention</span></td>
+        <td>Filter loading above 70% on 2 of 14 IDUs</td>
+        <td>Units FXFQ-06 (Suite 310) and FXFQ-09 (Suite 412) show accelerated loading, likely due to higher occupancy since Q4 2025 tenant changes. No airflow fault yet; will affect capacity if not addressed.</td>
+      </tr>
+      <tr>
+        <td><span class="badge attention">Attention</span></td>
+        <td>Condenser coil debris — south face</td>
+        <td>Light organic debris accumulated on south-facing outdoor unit coil from adjacent landscaping. No measurable head-pressure impact today; recommend coil wash before summer load.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Actions Taken On-Site</h2>
+  <ul class="clean">
+    <li>Verified refrigerant charge via subcooling method — no adjustment required.</li>
+    <li>Replaced filters on FXFQ-06 and FXFQ-09 with MERV-8 stock from service van.</li>
+    <li>Re-seated and taped chafed F1/F2 transmission wire at BS box #2; cleared U4 error history; confirmed 30-minute clean communication window before departure.</li>
+    <li>Torque-checked all 480V three-phase connections at outdoor unit disconnect.</li>
+    <li>Exported 90-day operating log from Intelligent Touch Controller; archived to client portal.</li>
+    <li>Walked findings with Jennifer Park at 11:50; verbal authorization to quote BS-box re-wire.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Recommendations &amp; Next Steps</h2>
+  <ul class="clean">
+    <li><strong>Within 14 days:</strong> Permanent repair of F1/F2 transmission run to BS box #2 — proper grommet at pass-through, replace chafed segment (~18 ft). Quote to follow within 2 business days.</li>
+    <li><strong>Before June 1, 2026:</strong> Condenser coil wash (chemical + low-pressure rinse) ahead of summer peak load.</li>
+    <li><strong>Next PMA visit (scheduled July 14, 2026):</strong> Re-inspect filters on FXFQ-06 and FXFQ-09; consider upgrade to MERV-11 if tenant density remains elevated.</li>
+    <li><strong>Informational:</strong> Daikin firmware 4.3.0 released March 2026 — no required action; review at Q3 visit.</li>
+  </ul>
+</section>
+
+<div class="sign-block">
+  <div>
+    <div class="sig-line"></div>
+    <div class="sig-label">Technician Signature — Marcus Delgado, NATE #2187449</div>
+  </div>
+  <div>
+    <div class="sig-line"></div>
+    <div class="sig-label">Client Acknowledgment</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div><strong>This report format is standard for all Aximus service visits.</strong></div>
+  <div>aximushvac.com &nbsp;·&nbsp; (510) 555-0100 &nbsp;·&nbsp; Page 1 of 1</div>
+</div>
+
+</body>
+</html>

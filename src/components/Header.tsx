@@ -36,23 +36,20 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 h-[72px] bg-white/95 backdrop-blur border-b border-border-subtle transition-shadow ${
+      className={`sticky top-0 z-50 h-24 bg-white/95 backdrop-blur border-b border-border-subtle transition-shadow ${
         scrolled ? "shadow-[0_2px_8px_rgba(10,33,71,0.08)]" : ""
       }`}
     >
       <div className="mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2" aria-label="Aximus HVAC home">
+        <Link href="/" className="flex items-center" aria-label="Aximus HVAC Solutions, Inc. home">
           <Image
             src="/images/logo.svg"
-            alt="Aximus HVAC logo"
-            width={40}
-            height={40}
+            alt="Aximus HVAC Solutions, Inc. logo"
+            width={1068}
+            height={597}
             priority
-            className="h-10 w-10"
+            className="h-20 w-auto"
           />
-          <span className="font-display text-xl font-bold tracking-tight text-navy">
-            AXIMUS<span className="text-blue"> HVAC</span>
-          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7" aria-label="Primary">

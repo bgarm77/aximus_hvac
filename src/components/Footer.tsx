@@ -35,18 +35,17 @@ export default function Footer() {
     <footer className="mt-auto bg-navy text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <Image
               src="/images/logo.svg"
-              alt="Aximus HVAC logo"
-              width={40}
-              height={40}
-              className="h-10 w-10"
+              alt="Aximus HVAC Solutions, Inc. logo"
+              width={1068}
+              height={597}
+              className="h-28 w-auto brightness-0 invert"
             />
-            <span className="font-display text-xl font-bold">AXIMUS HVAC</span>
           </div>
           <address className="mt-4 not-italic text-sm text-white/80 space-y-1">
-            <div>Aximus HVAC</div>
+            <div>Aximus HVAC Solutions, Inc.</div>
             <div>2855 Michelle Drive, Suite 150</div>
             <div>Irvine, CA 92606</div>
             <a href="tel:+18005551234" className="block hover:text-white">
@@ -142,7 +141,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-white/60">
-          <p>&copy; {year} Aximus HVAC. All rights reserved.</p>
+          <p>&copy; {year} Aximus HVAC Solutions, Inc. All rights reserved.</p>
           {isPageEnabled("/privacy-policy") && (
             <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
