@@ -208,10 +208,10 @@ export default function ServicesPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               Services
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               Commercial VRF/VRV Services in Orange County
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -221,13 +221,13 @@ export default function ServicesPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Schedule a Free Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -245,7 +245,7 @@ export default function ServicesPage() {
           <div className="max-w-2xl mb-12">
             <h2
               id="services-heading"
-              className="text-3xl sm:text-4xl font-bold text-brand-navy"
+              className="text-3xl sm:text-4xl font-bold text-navy"
             >
               What We Offer
             </h2>
@@ -259,18 +259,18 @@ export default function ServicesPage() {
             {services.map((s) => (
               <article
                 key={s.slug}
-                className="group flex flex-col bg-white border border-card-border rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)] hover:border-brand-sky"
+                className="group flex flex-col bg-white border border-card-border rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)] hover:border-sky"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue mb-4">
                   {s.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed flex-1">
                   {s.description}
                 </p>
                 <Link
                   href={s.slug}
-                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-blue group-hover:text-brand-navy"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:text-navy"
                   aria-label={`Learn more about ${s.title}`}
                 >
                   Learn More
@@ -300,7 +300,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2
             id="related-heading"
-            className="text-3xl sm:text-4xl font-bold text-brand-navy"
+            className="text-3xl sm:text-4xl font-bold text-navy"
           >
             Managing Multiple Buildings?
           </h2>
@@ -310,7 +310,7 @@ export default function ServicesPage() {
               with standardized reporting. See our{" "}
               <Link
                 href="/property-managers"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 property managers page
               </Link>{" "}
@@ -320,14 +320,14 @@ export default function ServicesPage() {
               Not sure who we cover? Check the{" "}
               <Link
                 href="/service-areas"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 service areas page
               </Link>{" "}
               for every Orange County city on our dispatch map, or read{" "}
               <Link
                 href="/about"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 why we built Aximus
               </Link>{" "}
@@ -342,7 +342,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2
             id="faq-heading"
-            className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10"
+            className="text-3xl sm:text-4xl font-bold text-navy mb-10"
           >
             Frequently Asked Questions
           </h2>
@@ -353,7 +353,7 @@ export default function ServicesPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -372,7 +372,7 @@ export default function ServicesPage() {
             <div className="max-w-2xl">
               <h2
                 id="final-cta"
-                className="text-3xl sm:text-4xl font-bold text-brand-navy"
+                className="text-3xl sm:text-4xl font-bold text-navy"
               >
                 Not Sure What You Need? Schedule a Free Assessment.
               </h2>
@@ -384,13 +384,13 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

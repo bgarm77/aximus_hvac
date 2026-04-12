@@ -159,10 +159,10 @@ export default function AboutPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               About Aximus
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               Why Aximus — Orange County&apos;s VRF/VRV Specialist
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -179,7 +179,7 @@ export default function AboutPage() {
       {/* 3. FOUNDER STORY */}
       <section className="py-16 sm:py-20" aria-labelledby="story-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="story-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="story-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             How Aximus Started
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -223,11 +223,11 @@ export default function AboutPage() {
               viewBox="0 0 24 24"
               fill="currentColor"
               aria-hidden
-              className="text-brand-sky mb-4"
+              className="text-sky mb-4"
             >
               <path d="M7 7h4v4H8c0 2 1 3 3 3v2c-3 0-5-2-5-5V7Zm8 0h4v4h-3c0 2 1 3 3 3v2c-3 0-5-2-5-5V7Z" />
             </svg>
-            <blockquote className="text-2xl sm:text-3xl font-semibold text-brand-navy leading-snug">
+            <blockquote className="text-2xl sm:text-3xl font-semibold text-navy leading-snug">
               We started Aximus because facility managers deserve a VRF specialist, not a
               generalist who googles error codes on-site.
             </blockquote>
@@ -242,7 +242,7 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20" aria-labelledby="credentials-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="credentials-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="credentials-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Credentials That Protect Your Warranty
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -256,7 +256,7 @@ export default function AboutPage() {
                 key={c.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{c.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{c.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{c.body}</p>
               </article>
             ))}
@@ -268,7 +268,7 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="values-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="values-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="values-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What We Stand For
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -282,10 +282,10 @@ export default function AboutPage() {
                 key={v.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue mb-4">
                   {v.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{v.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{v.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{v.body}</p>
               </article>
             ))}
@@ -296,7 +296,7 @@ export default function AboutPage() {
       {/* 7. SERVICE AREA */}
       <section className="py-16 sm:py-20" aria-labelledby="area-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="area-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="area-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Based in Orange County, Expanding Across Southern California
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -306,7 +306,7 @@ export default function AboutPage() {
               in between. See the full list on our{" "}
               <Link
                 href="/service-areas"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 service areas page
               </Link>
@@ -318,7 +318,7 @@ export default function AboutPage() {
               California and want one VRF vendor with standardized reporting, talk to our{" "}
               <Link
                 href="/property-managers"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 property management team
               </Link>
@@ -331,7 +331,7 @@ export default function AboutPage() {
       {/* 8. FAQ */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -341,7 +341,7 @@ export default function AboutPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -355,7 +355,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Schedule Your Free VRF System Assessment
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -366,13 +366,13 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

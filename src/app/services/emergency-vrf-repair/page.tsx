@@ -166,10 +166,10 @@ export default function EmergencyVrfRepairPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               24/7 Emergency Dispatch
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               Emergency VRF Repair — 4-Hour Response in Orange County
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -178,12 +178,12 @@ export default function EmergencyVrfRepairPage() {
             </p>
 
             <div className="mt-8 rounded-2xl border border-card-border bg-white p-6 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-wider text-brand-blue">
+              <p className="text-sm font-semibold uppercase tracking-wider text-blue">
                 Call Now for Emergency VRF Repair
               </p>
               <a
                 href={PHONE_HREF}
-                className="mt-2 block text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-brand-navy hover:text-brand-blue transition-colors"
+                className="mt-2 block text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-navy hover:text-blue transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -193,13 +193,13 @@ export default function EmergencyVrfRepairPage() {
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
                   href={PHONE_HREF}
-                  className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                  className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
                 >
                   Call {PHONE_DISPLAY}
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
                 >
                   Non-Emergency Contact
                 </Link>
@@ -216,7 +216,7 @@ export default function EmergencyVrfRepairPage() {
       <section className="py-16 sm:py-20" aria-labelledby="qualifies-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="qualifies-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="qualifies-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What Qualifies as an Emergency
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -230,7 +230,7 @@ export default function EmergencyVrfRepairPage() {
                 key={i.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{i.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{i.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{i.body}</p>
               </article>
             ))}
@@ -239,10 +239,10 @@ export default function EmergencyVrfRepairPage() {
       </section>
 
       {/* 4. OUR GUARANTEE */}
-      <section className="py-16 sm:py-20 bg-brand-navy" aria-labelledby="guarantee-heading">
+      <section className="py-16 sm:py-20 bg-navy" aria-labelledby="guarantee-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-light">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-light">
               Our Guarantee
             </span>
             <h2
@@ -251,7 +251,7 @@ export default function EmergencyVrfRepairPage() {
             >
               What You Get When You Call
             </h2>
-            <p className="mt-3 text-brand-light leading-relaxed">
+            <p className="mt-3 text-light leading-relaxed">
               A VRF failure is stressful enough. Our job is to make the response predictable —
               response time, technician, and pricing all committed up front.
             </p>
@@ -263,14 +263,14 @@ export default function EmergencyVrfRepairPage() {
                 className="bg-white/5 border border-white/10 rounded-2xl p-6"
               >
                 <h3 className="text-lg font-semibold text-white">{g.title}</h3>
-                <p className="mt-3 text-sm text-brand-light leading-relaxed">{g.body}</p>
+                <p className="mt-3 text-sm text-light leading-relaxed">{g.body}</p>
               </article>
             ))}
           </div>
           <div className="mt-10 flex flex-col sm:flex-row gap-3">
             <a
               href={PHONE_HREF}
-              className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-white text-brand-navy text-sm font-semibold hover:bg-brand-light transition-colors"
+              className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-white text-navy text-sm font-semibold hover:bg-light transition-colors"
             >
               Call Now: {PHONE_DISPLAY}
             </a>
@@ -288,7 +288,7 @@ export default function EmergencyVrfRepairPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="afterhours-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="afterhours-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="afterhours-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               After-Hours and Weekend Service
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -301,7 +301,7 @@ export default function EmergencyVrfRepairPage() {
                 key={a.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{a.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{a.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{a.body}</p>
               </article>
             ))}
@@ -313,7 +313,7 @@ export default function EmergencyVrfRepairPage() {
       <section className="py-16 sm:py-20" aria-labelledby="pricing-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="pricing-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="pricing-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Transparent Emergency Pricing
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -327,10 +327,10 @@ export default function EmergencyVrfRepairPage() {
                 key={p.label}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <p className="text-xs font-semibold uppercase tracking-wider text-brand-blue">
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue">
                   {p.label}
                 </p>
-                <p className="mt-2 text-3xl font-bold font-display text-brand-navy">{p.value}</p>
+                <p className="mt-2 text-3xl font-bold font-display text-navy">{p.value}</p>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{p.body}</p>
               </article>
             ))}
@@ -346,7 +346,7 @@ export default function EmergencyVrfRepairPage() {
       {/* 7. INTERNAL LINKS */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="related-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Related Services
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -354,7 +354,7 @@ export default function EmergencyVrfRepairPage() {
               Most emergency calls we handle would have been caught months earlier with a proper{" "}
               <Link
                 href="/services/vrv-vrf-maintenance"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF maintenance agreement
               </Link>
@@ -365,21 +365,21 @@ export default function EmergencyVrfRepairPage() {
               For non-emergency repairs, see our standard{" "}
               <Link
                 href="/services/vrv-vrf-repair"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF repair service
               </Link>
               . If you&apos;re on a Daikin platform, read more about{" "}
               <Link
                 href="/services/daikin-vrv-service"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 Daikin VRV service
               </Link>
               , or{" "}
               <Link
                 href="/services/mitsubishi-vrf-service"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 Mitsubishi VRF service
               </Link>{" "}
@@ -392,7 +392,7 @@ export default function EmergencyVrfRepairPage() {
       {/* 8. FAQ */}
       <section className="py-16 sm:py-20" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -402,7 +402,7 @@ export default function EmergencyVrfRepairPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -416,7 +416,7 @@ export default function EmergencyVrfRepairPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 VRF System Down Right Now? Call.
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -427,13 +427,13 @@ export default function EmergencyVrfRepairPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Call Now: {PHONE_DISPLAY}
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Non-Emergency Contact
               </Link>

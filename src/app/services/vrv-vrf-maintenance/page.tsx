@@ -150,10 +150,10 @@ export default function VrfMaintenancePage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRV/VRF Maintenance
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               VRF Maintenance Plans for Commercial Buildings
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -164,13 +164,13 @@ export default function VrfMaintenancePage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Get a PMA Quote
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -186,7 +186,7 @@ export default function VrfMaintenancePage() {
       <section className="py-16 sm:py-20" aria-labelledby="why-maint-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="why-maint-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="why-maint-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Why Preventive Maintenance Matters on VRF
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -201,7 +201,7 @@ export default function VrfMaintenancePage() {
                 key={w.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{w.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{w.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{w.body}</p>
               </article>
             ))}
@@ -216,7 +216,7 @@ export default function VrfMaintenancePage() {
       <section className="py-16 sm:py-20" aria-labelledby="visit-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="visit-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="visit-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What Each Scheduled Visit Includes
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -230,7 +230,7 @@ export default function VrfMaintenancePage() {
                 key={i.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{i.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{i.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{i.body}</p>
               </article>
             ))}
@@ -244,7 +244,7 @@ export default function VrfMaintenancePage() {
       {/* 7. INTERNAL LINKS */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="related-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Related Services
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -252,7 +252,7 @@ export default function VrfMaintenancePage() {
               Already dealing with a fault code or an outage? Start with{" "}
               <Link
                 href="/services/vrv-vrf-repair"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF repair
               </Link>
@@ -262,7 +262,7 @@ export default function VrfMaintenancePage() {
               New construction or a system replacement? See{" "}
               <Link
                 href="/services/vrv-vrf-installation"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF installation
               </Link>
@@ -275,7 +275,7 @@ export default function VrfMaintenancePage() {
       {/* 8. FAQ */}
       <section className="py-16 sm:py-20" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -285,7 +285,7 @@ export default function VrfMaintenancePage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -299,7 +299,7 @@ export default function VrfMaintenancePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Ready for a Maintenance Plan That Actually Documents the Work?
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -310,13 +310,13 @@ export default function VrfMaintenancePage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Get a PMA Quote
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

@@ -176,10 +176,10 @@ export default function PropertyManagersPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               For Property Management Firms
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               One VRF Service Vendor for Your Entire Portfolio
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -189,13 +189,13 @@ export default function PropertyManagersPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request a Portfolio Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -211,7 +211,7 @@ export default function PropertyManagersPage() {
       <section className="py-16 sm:py-20" aria-labelledby="pains-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="pains-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="pains-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What Property Managers Tell Us
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -224,7 +224,7 @@ export default function PropertyManagersPage() {
                 key={p.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{p.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{p.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{p.body}</p>
               </article>
             ))}
@@ -236,7 +236,7 @@ export default function PropertyManagersPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="benefits-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What You Get With a Portfolio MSA
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -250,7 +250,7 @@ export default function PropertyManagersPage() {
                 key={b.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{b.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{b.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{b.body}</p>
               </article>
             ))}
@@ -264,16 +264,16 @@ export default function PropertyManagersPage() {
       {/* 5b. PORTFOLIO PRICING NOTE */}
       <section aria-labelledby="portfolio-pricing-note" className="bg-surface pb-16 sm:pb-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-brand-blue/30 bg-white p-6 sm:p-8">
+          <div className="rounded-2xl border border-blue/30 bg-white p-6 sm:p-8">
             <h3
               id="portfolio-pricing-note"
-              className="text-xl font-semibold text-brand-navy"
+              className="text-xl font-semibold text-navy"
             >
               Portfolio Discount
             </h3>
             <p className="mt-3 text-text-secondary leading-relaxed">
               Portfolio discounts of{" "}
-              <strong className="text-brand-navy">10–15% off PMA pricing</strong> apply to property
+              <strong className="text-navy">10–15% off PMA pricing</strong> apply to property
               management firms with 5+ VRF properties under a single Master Service Agreement. Mix
               and match tiers across buildings — some Essential, some Premium — and the discount
               still applies.
@@ -286,7 +286,7 @@ export default function PropertyManagersPage() {
       <section className="py-16 sm:py-20" aria-labelledby="start-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="start-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="start-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               How to Get Started
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -299,10 +299,10 @@ export default function PropertyManagersPage() {
                 key={s.n}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-brand-blue text-white font-bold font-display">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue text-white font-bold font-display">
                   {s.n}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="mt-4 text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{s.body}</p>
               </li>
             ))}
@@ -311,14 +311,14 @@ export default function PropertyManagersPage() {
             Already manage buildings in our{" "}
             <Link
               href="/service-areas"
-              className="text-brand-blue font-semibold hover:text-brand-navy"
+              className="text-blue font-semibold hover:text-navy"
             >
               Southern California service area
             </Link>
             ? Review our{" "}
             <Link
               href="/services/vrv-vrf-maintenance"
-              className="text-brand-blue font-semibold hover:text-brand-navy"
+              className="text-blue font-semibold hover:text-navy"
             >
               VRV/VRF maintenance program
             </Link>{" "}
@@ -330,7 +330,7 @@ export default function PropertyManagersPage() {
       {/* 7. FAQ */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -340,7 +340,7 @@ export default function PropertyManagersPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -354,7 +354,7 @@ export default function PropertyManagersPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Request a Portfolio Assessment
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -366,13 +366,13 @@ export default function PropertyManagersPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

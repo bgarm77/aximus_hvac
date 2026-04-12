@@ -58,7 +58,7 @@ export default function ProcessSteps() {
     <section className="py-16 sm:py-20" aria-labelledby="process-heading">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-12">
-          <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Our Process
           </h2>
           <p className="mt-3 text-text-secondary">
@@ -77,14 +77,14 @@ export default function ProcessSteps() {
               className="relative bg-white border border-card-border rounded-2xl p-6 transition-transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)]"
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue">
                   {s.icon}
                 </span>
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-blue text-white text-sm font-semibold font-display">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue text-white text-sm font-semibold font-display">
                   {s.number}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+              <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
               <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.description}</p>
             </li>
           ))}

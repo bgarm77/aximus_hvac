@@ -224,10 +224,10 @@ export default function VrfInstallationPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRV/VRF Installation
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               VRV/VRF System Installation in Orange County
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -238,13 +238,13 @@ export default function VrfInstallationPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request a Design Consultation
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -260,7 +260,7 @@ export default function VrfInstallationPage() {
       <section className="py-16 sm:py-20" aria-labelledby="install-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="install-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="install-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What We Install
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -270,7 +270,7 @@ export default function VrfInstallationPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Daikin VRV</h3>
+              <h3 className="text-lg font-semibold text-navy">Daikin VRV</h3>
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 VRV IV, VRV Aurora (cold-climate), and VRV LIFE (residential-adjacent mixed-use).
                 We maintain OEM parts access and handle Daikin warranty registration on every
@@ -278,14 +278,14 @@ export default function VrfInstallationPage() {
               </p>
             </article>
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Mitsubishi Electric VRF</h3>
+              <h3 className="text-lg font-semibold text-navy">Mitsubishi Electric VRF</h3>
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 City Multi R2, Y-Series, and WR2 heat recovery and heat pump platforms. Diamond
                 Contractor-level installation standards on every project.
               </p>
             </article>
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Multi-Zone Systems</h3>
+              <h3 className="text-lg font-semibold text-navy">Multi-Zone Systems</h3>
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 Heat pump, heat recovery, and hybrid configurations from 6-ton single-condenser
                 suites up to 40-ton multi-module towers with BACnet integration.
@@ -299,7 +299,7 @@ export default function VrfInstallationPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="process-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Our Installation Process
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -313,14 +313,14 @@ export default function VrfInstallationPage() {
                 className="bg-white border border-card-border rounded-2xl p-6 transition-transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)]"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue">
+                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue">
                     {s.icon}
                   </span>
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-blue text-white text-sm font-semibold font-display">
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue text-white text-sm font-semibold font-display">
                     {s.number}
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.description}</p>
               </li>
             ))}
@@ -332,7 +332,7 @@ export default function VrfInstallationPage() {
       <section className="py-16 sm:py-20" aria-labelledby="included-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="included-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="included-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What&apos;s Included in Every Install
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -346,7 +346,7 @@ export default function VrfInstallationPage() {
                 key={i.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{i.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{i.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{i.body}</p>
               </article>
             ))}
@@ -358,7 +358,7 @@ export default function VrfInstallationPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="why-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Why Aximus for VRF Installation
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -371,7 +371,7 @@ export default function VrfInstallationPage() {
                 key={w.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{w.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{w.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{w.body}</p>
               </article>
             ))}
@@ -382,7 +382,7 @@ export default function VrfInstallationPage() {
       {/* 7. INTERNAL LINKS */}
       <section className="py-16 sm:py-20" aria-labelledby="related-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Related Services
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -390,7 +390,7 @@ export default function VrfInstallationPage() {
               Need startup and verification only? Our{" "}
               <Link
                 href="/services/vrv-vrf-commissioning"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF commissioning service
               </Link>{" "}
@@ -400,14 +400,14 @@ export default function VrfInstallationPage() {
               Already installed and looking for ongoing coverage? See our{" "}
               <Link
                 href="/services/vrv-vrf-maintenance"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF maintenance agreements
               </Link>
               , or read more about{" "}
               <Link
                 href="/services/daikin-vrv-service"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 Daikin VRV service
               </Link>{" "}
@@ -420,7 +420,7 @@ export default function VrfInstallationPage() {
       {/* 8. FAQ */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -430,7 +430,7 @@ export default function VrfInstallationPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -444,7 +444,7 @@ export default function VrfInstallationPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Ready to Design Your VRF Installation?
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -455,13 +455,13 @@ export default function VrfInstallationPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Consultation
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

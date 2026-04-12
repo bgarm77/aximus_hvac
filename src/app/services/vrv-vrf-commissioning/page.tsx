@@ -228,10 +228,10 @@ export default function VrfCommissioningPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRF/VRV Commissioning
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               VRF/VRV System Commissioning in California
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -242,13 +242,13 @@ export default function VrfCommissioningPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request a Commissioning Quote
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -264,7 +264,7 @@ export default function VrfCommissioningPage() {
       <section className="py-16 sm:py-20" aria-labelledby="what-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="what-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="what-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What We Do on a Commissioning Job
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -274,7 +274,7 @@ export default function VrfCommissioningPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Daikin VRV IV &amp; V</h3>
+              <h3 className="text-lg font-semibold text-navy">Daikin VRV IV &amp; V</h3>
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 Full startup and verification on Daikin VRV IV and VRV V platforms. Heat pump, heat
                 recovery, and VRV LIFE configurations. Factory-trained and current on the VRV V
@@ -282,7 +282,7 @@ export default function VrfCommissioningPage() {
               </p>
             </article>
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Mitsubishi City Multi</h3>
+              <h3 className="text-lg font-semibold text-navy">Mitsubishi City Multi</h3>
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 R2, Y-Series, and WR2 platforms. M-NET addressing, branch controller verification,
                 and AE-200 central controller setup tested against the project sequence of
@@ -290,7 +290,7 @@ export default function VrfCommissioningPage() {
               </p>
             </article>
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Controls &amp; BMS</h3>
+              <h3 className="text-lg font-semibold text-navy">Controls &amp; BMS</h3>
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 BACnet and Modbus gateway configuration, point mapping with your controls sub, and
                 documented integration with the building automation system before we sign off.
@@ -304,7 +304,7 @@ export default function VrfCommissioningPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="process-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Our Commissioning Process
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -319,14 +319,14 @@ export default function VrfCommissioningPage() {
                 className="bg-white border border-card-border rounded-2xl p-6 transition-transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)]"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue">
+                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue">
                     {s.icon}
                   </span>
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-blue text-white text-sm font-semibold font-display">
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue text-white text-sm font-semibold font-display">
                     {s.number}
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.description}</p>
               </li>
             ))}
@@ -338,7 +338,7 @@ export default function VrfCommissioningPage() {
       <section className="py-16 sm:py-20" aria-labelledby="included-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="included-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="included-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What&apos;s Included in Every Commissioning Scope
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -352,7 +352,7 @@ export default function VrfCommissioningPage() {
                 key={i.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{i.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{i.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{i.body}</p>
               </article>
             ))}
@@ -364,7 +364,7 @@ export default function VrfCommissioningPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="creds-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="creds-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="creds-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Credentials &amp; Insurance
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -373,7 +373,7 @@ export default function VrfCommissioningPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Licenses &amp; Certifications</h3>
+              <h3 className="text-lg font-semibold text-navy">Licenses &amp; Certifications</h3>
               <ul className="mt-3 space-y-2 text-sm text-text-secondary leading-relaxed">
                 <li>CSLB C-20 Warm-Air Heating, Ventilating and Air-Conditioning</li>
                 <li>EPA 608 Universal refrigerant certification</li>
@@ -382,7 +382,7 @@ export default function VrfCommissioningPage() {
               </ul>
             </article>
             <article className="bg-white border border-card-border rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-brand-navy">Insurance Coverage</h3>
+              <h3 className="text-lg font-semibold text-navy">Insurance Coverage</h3>
               <ul className="mt-3 space-y-2 text-sm text-text-secondary leading-relaxed">
                 <li>$1M general liability per occurrence, $2M aggregate</li>
                 <li>Commercial auto coverage on every service vehicle</li>
@@ -398,7 +398,7 @@ export default function VrfCommissioningPage() {
       <section className="py-16 sm:py-20" aria-labelledby="why-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Why GCs and MEP Firms Use Aximus
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -411,7 +411,7 @@ export default function VrfCommissioningPage() {
                 key={w.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{w.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{w.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{w.body}</p>
               </article>
             ))}
@@ -422,7 +422,7 @@ export default function VrfCommissioningPage() {
       {/* 8. INTERNAL LINKS */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="related-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Related Services
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -430,7 +430,7 @@ export default function VrfCommissioningPage() {
               Need the full mechanical scope, not just commissioning? Our{" "}
               <Link
                 href="/services/vrv-vrf-installation"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF installation service
               </Link>{" "}
@@ -441,14 +441,14 @@ export default function VrfCommissioningPage() {
               our{" "}
               <Link
                 href="/services/vrv-vrf-maintenance"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF maintenance agreements
               </Link>
               , or call us directly for{" "}
               <Link
                 href="/services/vrv-vrf-repair"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF repair
               </Link>{" "}
@@ -461,7 +461,7 @@ export default function VrfCommissioningPage() {
       {/* 9. FAQ */}
       <section className="py-16 sm:py-20" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -471,7 +471,7 @@ export default function VrfCommissioningPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -485,7 +485,7 @@ export default function VrfCommissioningPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Ready to Close Out Your VRF Project?
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -496,13 +496,13 @@ export default function VrfCommissioningPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request a Commissioning Quote
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

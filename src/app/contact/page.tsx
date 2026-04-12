@@ -128,10 +128,10 @@ export default function ContactPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               Contact Aximus
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               Get a Free VRF System Assessment
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -142,13 +142,13 @@ export default function ContactPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Call {PHONE_DISPLAY}
               </a>
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Request a Quote
               </a>
@@ -172,7 +172,7 @@ export default function ContactPage() {
             <div className="lg:col-span-3">
               <h2
                 id="contact-form"
-                className="text-3xl sm:text-4xl font-bold text-brand-navy"
+                className="text-3xl sm:text-4xl font-bold text-navy"
               >
                 Tell Us About Your System
               </h2>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={PHONE_HREF}
-                  className="mt-2 block text-3xl sm:text-4xl font-bold text-brand-navy hover:text-brand-blue transition-colors"
+                  className="mt-2 block text-3xl sm:text-4xl font-bold text-navy hover:text-blue transition-colors"
                 >
                   {PHONE_DISPLAY}
                 </a>
@@ -209,7 +209,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={EMAIL_HREF}
-                  className="mt-2 block text-lg font-semibold text-brand-blue hover:text-brand-navy break-all"
+                  className="mt-2 block text-lg font-semibold text-blue hover:text-navy break-all"
                 >
                   {EMAIL_DISPLAY}
                 </a>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                 <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary">
                   Business Hours
                 </p>
-                <dl className="mt-3 space-y-2 text-sm text-brand-navy">
+                <dl className="mt-3 space-y-2 text-sm text-navy">
                   <div className="flex justify-between">
                     <dt className="font-medium">Monday – Friday</dt>
                     <dd className="text-text-secondary">7:00 AM – 6:00 PM</dd>
@@ -255,7 +255,7 @@ export default function ContactPage() {
                 </p>
                 <Link
                   href="/service-areas"
-                  className="mt-4 inline-flex text-sm font-semibold text-brand-blue hover:text-brand-navy"
+                  className="mt-4 inline-flex text-sm font-semibold text-blue hover:text-navy"
                 >
                   See all service areas →
                 </Link>
@@ -272,7 +272,7 @@ export default function ContactPage() {
             <div>
               <h2
                 id="map-heading"
-                className="text-3xl sm:text-4xl font-bold text-brand-navy"
+                className="text-3xl sm:text-4xl font-bold text-navy"
               >
                 Based in Orange County, On Your Site Fast
               </h2>
@@ -289,7 +289,7 @@ export default function ContactPage() {
                   you have it — we&apos;ll flag warranty gaps before writing a scope.
                 </p>
               </div>
-              <address className="mt-6 not-italic text-sm text-brand-navy">
+              <address className="mt-6 not-italic text-sm text-navy">
                 <p className="font-semibold">Aximus HVAC Solutions</p>
                 <p className="text-text-secondary">Orange County, California</p>
                 <p className="text-text-secondary">
@@ -315,19 +315,19 @@ export default function ContactPage() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   aria-hidden
-                  className="mx-auto text-brand-blue"
+                  className="mx-auto text-blue"
                 >
                   <path d="M12 22s8-7 8-13a8 8 0 1 0-16 0c0 6 8 13 8 13Z" />
                   <circle cx="12" cy="9" r="3" />
                 </svg>
-                <p className="mt-4 text-base font-semibold text-brand-navy">
+                <p className="mt-4 text-base font-semibold text-navy">
                   Orange County, California
                 </p>
                 <p className="mt-1 text-sm text-text-secondary">
                   Interactive map coming soon. Call{" "}
                   <a
                     href={PHONE_HREF}
-                    className="text-brand-blue font-semibold hover:text-brand-navy"
+                    className="text-blue font-semibold hover:text-navy"
                   >
                     {PHONE_DISPLAY}
                   </a>{" "}
@@ -344,7 +344,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2
             id="faq-heading"
-            className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10"
+            className="text-3xl sm:text-4xl font-bold text-navy mb-10"
           >
             Frequently Asked Questions
           </h2>
@@ -355,7 +355,7 @@ export default function ContactPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">
                   {f.a}
@@ -376,7 +376,7 @@ export default function ContactPage() {
             <div className="max-w-2xl">
               <h2
                 id="final-cta"
-                className="text-3xl sm:text-4xl font-bold text-brand-navy"
+                className="text-3xl sm:text-4xl font-bold text-navy"
               >
                 Ready for an HVAC Quote in Orange County?
               </h2>
@@ -388,13 +388,13 @@ export default function ContactPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Call {PHONE_DISPLAY}
               </a>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Browse Services
               </Link>

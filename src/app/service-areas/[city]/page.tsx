@@ -141,25 +141,25 @@ export default async function CityPage({ params }: CityPageProps) {
           <nav aria-label="Breadcrumb" className="text-sm text-text-secondary">
             <ol className="flex flex-wrap items-center gap-1">
               <li>
-                <Link href="/" className="hover:text-brand-blue">
+                <Link href="/" className="hover:text-blue">
                   Home
                 </Link>
               </li>
               <li aria-hidden>/</li>
               <li>
-                <Link href="/service-areas" className="hover:text-brand-blue">
+                <Link href="/service-areas" className="hover:text-blue">
                   Service Areas
                 </Link>
               </li>
               <li aria-hidden>/</li>
-              <li className="text-brand-navy font-semibold">{area.city}</li>
+              <li className="text-navy font-semibold">{area.city}</li>
             </ol>
           </nav>
           <div className="mt-6 max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               {area.county} County Coverage
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               VRF/VRV Service in {area.city}, California
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -169,13 +169,13 @@ export default async function CityPage({ params }: CityPageProps) {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Service in {area.city}
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -191,7 +191,7 @@ export default async function CityPage({ params }: CityPageProps) {
       <section className="py-16 sm:py-20" aria-labelledby="intro-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2">
-            <h2 id="intro-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="intro-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Commercial VRF Service for {area.city}
             </h2>
             <p className="mt-4 text-text-secondary leading-relaxed">
@@ -201,7 +201,7 @@ export default async function CityPage({ params }: CityPageProps) {
 
             {details?.localNotes && (
               <>
-                <h3 className="mt-8 text-xl font-semibold text-brand-navy">
+                <h3 className="mt-8 text-xl font-semibold text-navy">
                   What We See in {area.city}
                 </h3>
                 <p className="mt-3 text-text-secondary leading-relaxed">{details.localNotes}</p>
@@ -210,14 +210,14 @@ export default async function CityPage({ params }: CityPageProps) {
           </div>
 
           <aside className="rounded-2xl bg-white border border-card-border p-6 h-fit">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-blue">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-blue">
               ZIP Codes We Cover
             </h3>
             <ul className="mt-4 grid grid-cols-2 gap-2">
               {zips.map((z) => (
                 <li
                   key={z}
-                  className="inline-flex items-center justify-center rounded-lg bg-surface border border-card-border px-3 py-2 text-sm font-semibold text-brand-navy"
+                  className="inline-flex items-center justify-center rounded-lg bg-surface border border-card-border px-3 py-2 text-sm font-semibold text-navy"
                 >
                   {z}
                 </li>
@@ -225,13 +225,13 @@ export default async function CityPage({ params }: CityPageProps) {
             </ul>
             {details?.neighborhoods && details.neighborhoods.length > 0 && (
               <>
-                <h3 className="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+                <h3 className="mt-6 text-sm font-semibold uppercase tracking-wider text-blue">
                   Neighborhoods
                 </h3>
                 <ul className="mt-3 space-y-1.5 text-sm text-text-secondary">
                   {details.neighborhoods.map((n) => (
                     <li key={n} className="flex gap-2">
-                      <span aria-hidden className="text-brand-blue">
+                      <span aria-hidden className="text-blue">
                         •
                       </span>
                       {n}
@@ -251,7 +251,7 @@ export default async function CityPage({ params }: CityPageProps) {
             <div className="max-w-2xl mb-10">
               <h2
                 id="building-types-heading"
-                className="text-3xl sm:text-4xl font-bold text-brand-navy"
+                className="text-3xl sm:text-4xl font-bold text-navy"
               >
                 Building Types We Service in {area.city}
               </h2>
@@ -267,11 +267,11 @@ export default async function CityPage({ params }: CityPageProps) {
                 >
                   <span
                     aria-hidden
-                    className="shrink-0 mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-full bg-brand-blue text-white text-xs font-bold"
+                    className="shrink-0 mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue text-white text-xs font-bold"
                   >
                     ✓
                   </span>
-                  <span className="text-sm text-brand-navy font-medium">{b}</span>
+                  <span className="text-sm text-navy font-medium">{b}</span>
                 </li>
               ))}
             </ul>
@@ -283,7 +283,7 @@ export default async function CityPage({ params }: CityPageProps) {
       <section className="py-16 sm:py-20" aria-labelledby="services-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10">
-            <h2 id="services-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="services-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Services Available in {area.city}
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -297,7 +297,7 @@ export default async function CityPage({ params }: CityPageProps) {
                 href={s.href}
                 className="block rounded-2xl bg-white border border-card-border p-6 hover:-translate-y-0.5 transition-transform"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.body}</p>
               </Link>
             ))}
@@ -306,14 +306,14 @@ export default async function CityPage({ params }: CityPageProps) {
             Managing multiple buildings in {area.county} County? See our{" "}
             <Link
               href="/property-managers"
-              className="text-brand-blue font-semibold hover:text-brand-navy"
+              className="text-blue font-semibold hover:text-navy"
             >
               property management portfolio program
             </Link>{" "}
             for consolidated billing and portfolio discounts, or browse{" "}
             <Link
               href="/service-areas"
-              className="text-brand-blue font-semibold hover:text-brand-navy"
+              className="text-blue font-semibold hover:text-navy"
             >
               every city we service
             </Link>
@@ -327,7 +327,7 @@ export default async function CityPage({ params }: CityPageProps) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Request VRF Service in {area.city}
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -338,13 +338,13 @@ export default async function CityPage({ params }: CityPageProps) {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Service
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

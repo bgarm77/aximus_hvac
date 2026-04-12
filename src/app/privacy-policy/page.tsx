@@ -55,10 +55,10 @@ export default function PrivacyPolicyPage() {
       {/* 1. HERO */}
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+          <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
             Legal
           </span>
-          <h1 className="mt-4 text-4xl sm:text-5xl font-bold text-brand-navy leading-[1.1]">
+          <h1 className="mt-4 text-4xl sm:text-5xl font-bold text-navy leading-[1.1]">
             Privacy Policy
           </h1>
           <p className="mt-6 text-lg text-text-secondary">
@@ -86,18 +86,18 @@ export default function PrivacyPolicyPage() {
 
           {/* Information We Collect */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">
               Information We Collect
             </h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
               <p>We collect information you give us directly and information collected automatically when you use our site.</p>
-              <h3 className="text-lg font-semibold text-brand-navy mt-6">Information you provide</h3>
+              <h3 className="text-lg font-semibold text-navy mt-6">Information you provide</h3>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Contact details: name, company, email, phone number, and property address submitted through our contact form or by phone.</li>
                 <li>Service details: building type, equipment make and model, service history, and notes you share when requesting a quote or assessment.</li>
                 <li>Correspondence: emails, text messages, and call records related to your service request.</li>
               </ul>
-              <h3 className="text-lg font-semibold text-brand-navy mt-6">Information collected automatically</h3>
+              <h3 className="text-lg font-semibold text-navy mt-6">Information collected automatically</h3>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Device and browser data: IP address, browser type, operating system, and referring URL.</li>
                 <li>Usage data: pages viewed, time on page, and links clicked.</li>
@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
 
           {/* How We Use It */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">
               How We Use It
             </h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
@@ -132,7 +132,7 @@ export default function PrivacyPolicyPage() {
 
           {/* CCPA Rights */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">
               Your California Privacy Rights (CCPA)
             </h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
@@ -164,7 +164,7 @@ export default function PrivacyPolicyPage() {
                 To exercise any of these rights, email us at{" "}
                 <a
                   href={`mailto:${PRIVACY_EMAIL}`}
-                  className="text-brand-blue font-semibold hover:text-brand-navy"
+                  className="text-blue font-semibold hover:text-navy"
                 >
                   {PRIVACY_EMAIL}
                 </a>{" "}
@@ -177,7 +177,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Cookies */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">Cookies</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">Cookies</h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
               <p>
                 We use cookies and similar technologies to make the site work, remember your
@@ -203,7 +203,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Data Retention & Security */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">
               Data Retention and Security
             </h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
@@ -219,7 +219,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Changes */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">
               Changes to This Policy
             </h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
@@ -233,7 +233,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Contact */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy">
               Contact for Privacy Inquiries
             </h2>
             <div className="mt-4 space-y-4 text-text-secondary leading-relaxed">
@@ -242,12 +242,12 @@ export default function PrivacyPolicyPage() {
                 reach us at:
               </p>
               <div className="bg-white border border-card-border rounded-2xl p-6">
-                <p className="font-semibold text-brand-navy">{COMPANY}</p>
+                <p className="font-semibold text-navy">{COMPANY}</p>
                 <p className="mt-2">
                   Email:{" "}
                   <a
                     href={`mailto:${PRIVACY_EMAIL}`}
-                    className="text-brand-blue font-semibold hover:text-brand-navy"
+                    className="text-blue font-semibold hover:text-navy"
                   >
                     {PRIVACY_EMAIL}
                   </a>
@@ -256,7 +256,7 @@ export default function PrivacyPolicyPage() {
                   Phone:{" "}
                   <a
                     href={PHONE_HREF}
-                    className="text-brand-blue font-semibold hover:text-brand-navy"
+                    className="text-blue font-semibold hover:text-navy"
                   >
                     {PHONE_DISPLAY}
                   </a>
@@ -267,14 +267,14 @@ export default function PrivacyPolicyPage() {
                 Prefer a form? Use our{" "}
                 <Link
                   href="/contact"
-                  className="text-brand-blue font-semibold hover:text-brand-navy"
+                  className="text-blue font-semibold hover:text-navy"
                 >
                   contact page
                 </Link>
                 . For company background, see{" "}
                 <Link
                   href="/about"
-                  className="text-brand-blue font-semibold hover:text-brand-navy"
+                  className="text-blue font-semibold hover:text-navy"
                 >
                   About Aximus
                 </Link>

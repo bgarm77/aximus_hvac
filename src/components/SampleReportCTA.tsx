@@ -6,7 +6,7 @@ export default function SampleReportCTA() {
           <div className="max-w-2xl">
             <h2
               id="sample-report-heading"
-              className="text-2xl sm:text-3xl font-bold text-brand-navy"
+              className="text-2xl sm:text-3xl font-bold text-navy"
             >
               See What Professional VRF Service Documentation Looks Like
             </h2>
@@ -17,7 +17,7 @@ export default function SampleReportCTA() {
           </div>
           <a
             href="/downloads/aximus-sample-service-report.pdf"
-            className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors shrink-0"
+            className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors shrink-0"
             download
           >
             <svg

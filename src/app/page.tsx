@@ -197,10 +197,10 @@ export default function HomePage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 min-h-[560px] flex flex-col justify-center">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRF Service Orange County
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               Orange County&apos;s Only Dedicated VRF/VRV Service Specialist
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -210,13 +210,13 @@ export default function HomePage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Schedule Your Free VRF System Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Call for Emergency Repair: {PHONE_DISPLAY}
               </a>
@@ -232,7 +232,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20" aria-labelledby="services-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="services-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="services-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What We Do
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -246,14 +246,14 @@ export default function HomePage() {
               <Link
                 key={s.href}
                 href={s.href}
-                className="group bg-white border border-card-border rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)] hover:border-brand-sky"
+                className="group bg-white border border-card-border rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)] hover:border-sky"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue mb-4">
                   {s.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.description}</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-blue group-hover:text-brand-navy">
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:text-navy">
                   Learn more
                   <svg
                     width="16"
@@ -283,7 +283,7 @@ export default function HomePage() {
       <section aria-labelledby="pma-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 -mb-8">
           <div className="max-w-2xl">
-            <h2 id="pma-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="pma-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Preventive Maintenance Plans That Protect Your Investment
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -296,7 +296,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-4 -mt-6 text-center">
           <Link
             href="/services/vrv-vrf-maintenance"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-brand-blue hover:text-brand-navy"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-blue hover:text-navy"
           >
             See full maintenance plan details
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -313,7 +313,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="testimonials-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="testimonials-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="testimonials-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What Facility Managers Say
             </h2>
             <p className="mt-3 text-sm text-text-secondary italic">
@@ -332,15 +332,15 @@ export default function HomePage() {
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   aria-hidden
-                  className="text-brand-sky mb-3"
+                  className="text-sky mb-3"
                 >
                   <path d="M7 7h4v4H8c0 2 1 3 3 3v2c-3 0-5-2-5-5V7Zm8 0h4v4h-3c0 2 1 3 3 3v2c-3 0-5-2-5-5V7Z" />
                 </svg>
-                <blockquote className="text-sm text-brand-navy leading-relaxed flex-1">
+                <blockquote className="text-sm text-navy leading-relaxed flex-1">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <figcaption className="mt-4 pt-4 border-t border-border-subtle">
-                  <div className="text-sm font-semibold text-brand-navy">{t.name}</div>
+                  <div className="text-sm font-semibold text-navy">{t.name}</div>
                   <div className="text-xs text-text-secondary">{t.role}</div>
                 </figcaption>
               </figure>
@@ -354,7 +354,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 -mb-8">
           <h2
             id="service-areas-intro"
-            className="text-3xl sm:text-4xl font-bold text-brand-navy max-w-3xl"
+            className="text-3xl sm:text-4xl font-bold text-navy max-w-3xl"
           >
             Serving Irvine, Anaheim, Costa Mesa, Newport Beach &amp; All of Orange County
           </h2>
@@ -365,7 +365,7 @@ export default function HomePage() {
       {/* 9. FAQ */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -375,7 +375,7 @@ export default function HomePage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -389,7 +389,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Need Emergency VRF Repair? Call Now.
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -400,13 +400,13 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Request Assessment
               </Link>

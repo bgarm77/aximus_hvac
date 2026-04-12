@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-navy: #0a2147;
-  --color-brand-blue: #124e88;
-  --color-brand-sky: #3288c0;
-  --color-brand-light: #a9cce3;
+  --color-navy: #0a2147;
+  --color-blue: #124e88;
+  --color-sky: #3288c0;
+  --color-light: #a9cce3;
+  --color-tint: #a9cce3;
   --color-surface: #f5faff;
   --color-border-control: #7899ad;
   --color-border-subtle: #d7e2ee;
-  --color-card-border: #d7e2ee;
   --color-text-secondary: #264261;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-sora: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --radius-btn: 12px;
   --radius-card: 16px;
@@ -26,7 +28,7 @@ html {
 
 body {
   background: #ffffff;
-  color: var(--color-brand-navy);
+  color: var(--color-navy);
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.6;
@@ -36,7 +38,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  color: var(--color-brand-navy);
+  color: var(--color-navy);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.2;
@@ -47,7 +49,7 @@ h4, h5, h6 {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-brand-sky);
+  outline: 2px solid var(--color-sky);
   outline-offset: 2px;
   border-radius: 4px;
 }

@@ -46,8 +46,8 @@ function PostCard({ post }: { post: BlogPostMeta }) {
         <span aria-hidden>•</span>
         <span>{post.readingMinutes} min read</span>
       </div>
-      <h2 className="mt-3 text-xl font-semibold text-brand-navy leading-snug">
-        <Link href={`/blog/${post.slug}`} className="hover:text-brand-blue">
+      <h2 className="mt-3 text-xl font-semibold text-navy leading-snug">
+        <Link href={`/blog/${post.slug}`} className="hover:text-blue">
           {post.title}
         </Link>
       </h2>
@@ -56,7 +56,7 @@ function PostCard({ post }: { post: BlogPostMeta }) {
       </p>
       <Link
         href={`/blog/${post.slug}`}
-        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue hover:text-brand-navy"
+        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue hover:text-navy"
       >
         Read more
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -71,23 +71,23 @@ function PostCard({ post }: { post: BlogPostMeta }) {
 function EmptyState() {
   return (
     <div className="bg-white border border-card-border rounded-2xl p-10 sm:p-14 text-center">
-      <div className="mx-auto w-14 h-14 rounded-xl bg-surface text-brand-blue inline-flex items-center justify-center mb-5">
+      <div className="mx-auto w-14 h-14 rounded-xl bg-surface text-blue inline-flex items-center justify-center mb-5">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
           <path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4V4Z" />
           <path d="M8 8h8M8 12h8M8 16h5" />
         </svg>
       </div>
-      <h2 className="text-2xl font-semibold text-brand-navy">
+      <h2 className="text-2xl font-semibold text-navy">
         Articles coming soon
       </h2>
       <p className="mt-3 text-text-secondary max-w-xl mx-auto">
         Check back for VRF/VRV maintenance tips, industry updates, and expert
         guides. In the meantime, explore our{" "}
-        <Link href="/services" className="text-brand-blue font-semibold hover:text-brand-navy">
+        <Link href="/services" className="text-blue font-semibold hover:text-navy">
           service pages
         </Link>{" "}
         or request a{" "}
-        <Link href="/contact" className="text-brand-blue font-semibold hover:text-brand-navy">
+        <Link href="/contact" className="text-blue font-semibold hover:text-navy">
           free VRF assessment
         </Link>
         .
@@ -107,7 +107,7 @@ function Pagination({ current, totalPages }: { current: number; totalPages: numb
       {current > 1 && (
         <Link
           href={current - 1 === 1 ? "/blog" : `/blog?page=${current - 1}`}
-          className="inline-flex h-10 px-4 items-center rounded-lg border border-border-control text-sm font-medium text-brand-navy hover:bg-surface"
+          className="inline-flex h-10 px-4 items-center rounded-lg border border-border-control text-sm font-medium text-navy hover:bg-surface"
         >
           Previous
         </Link>
@@ -119,8 +119,8 @@ function Pagination({ current, totalPages }: { current: number; totalPages: numb
           aria-current={p === current ? "page" : undefined}
           className={
             p === current
-              ? "inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-blue text-white text-sm font-semibold"
-              : "inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border-control text-sm font-medium text-brand-navy hover:bg-surface"
+              ? "inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue text-white text-sm font-semibold"
+              : "inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border-control text-sm font-medium text-navy hover:bg-surface"
           }
         >
           {p}
@@ -129,7 +129,7 @@ function Pagination({ current, totalPages }: { current: number; totalPages: numb
       {current < totalPages && (
         <Link
           href={`/blog?page=${current + 1}`}
-          className="inline-flex h-10 px-4 items-center rounded-lg border border-border-control text-sm font-medium text-brand-navy hover:bg-surface"
+          className="inline-flex h-10 px-4 items-center rounded-lg border border-border-control text-sm font-medium text-navy hover:bg-surface"
         >
           Next
         </Link>
@@ -176,10 +176,10 @@ export default async function BlogIndexPage({ searchParams }: BlogListPageProps)
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               Resources
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               VRF/VRV Resources &amp; Insights
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -217,7 +217,7 @@ export default async function BlogIndexPage({ searchParams }: BlogListPageProps)
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="blog-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="blog-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Need help with your VRF system?
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -229,13 +229,13 @@ export default async function BlogIndexPage({ searchParams }: BlogListPageProps)
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Request Assessment
               </Link>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>

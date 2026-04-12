@@ -264,10 +264,10 @@ export default function MitsubishiVrfServicePage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               Mitsubishi City Multi Specialist
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               Mitsubishi VRF Service for Commercial Properties
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -278,13 +278,13 @@ export default function MitsubishiVrfServicePage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Call for Mitsubishi Service
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Schedule a Diagnostic
               </Link>
@@ -300,7 +300,7 @@ export default function MitsubishiVrfServicePage() {
       <section className="py-16 sm:py-20" aria-labelledby="platforms-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="platforms-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="platforms-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Mitsubishi City Multi Platforms We Service
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -314,7 +314,7 @@ export default function MitsubishiVrfServicePage() {
                 key={p.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{p.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{p.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{p.body}</p>
               </article>
             ))}
@@ -326,7 +326,7 @@ export default function MitsubishiVrfServicePage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="codes-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="codes-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="codes-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Mitsubishi VRF Fault Codes We Resolve
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -340,10 +340,10 @@ export default function MitsubishiVrfServicePage() {
                 key={e.code}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <div className="inline-flex items-center justify-center px-3 py-1 rounded-lg bg-brand-navy text-white text-sm font-semibold font-display">
+                <div className="inline-flex items-center justify-center px-3 py-1 rounded-lg bg-navy text-white text-sm font-semibold font-display">
                   {e.code}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-brand-navy">{e.title}</h3>
+                <h3 className="mt-4 text-lg font-semibold text-navy">{e.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{e.body}</p>
               </article>
             ))}
@@ -355,7 +355,7 @@ export default function MitsubishiVrfServicePage() {
       <section className="py-16 sm:py-20" aria-labelledby="process-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               How Mitsubishi Service Works
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -370,14 +370,14 @@ export default function MitsubishiVrfServicePage() {
                 className="bg-white border border-card-border rounded-2xl p-6 transition-transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)]"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue">
+                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue">
                     {s.icon}
                   </span>
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-blue text-white text-sm font-semibold font-display">
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue text-white text-sm font-semibold font-display">
                     {s.number}
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.description}</p>
               </li>
             ))}
@@ -389,7 +389,7 @@ export default function MitsubishiVrfServicePage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="why-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Why a Mitsubishi Specialist, Not a Generalist
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -403,7 +403,7 @@ export default function MitsubishiVrfServicePage() {
                 key={w.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{w.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{w.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{w.body}</p>
               </article>
             ))}
@@ -414,7 +414,7 @@ export default function MitsubishiVrfServicePage() {
       {/* 7. INTERNAL LINKS */}
       <section className="py-16 sm:py-20" aria-labelledby="related-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Related Services
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -422,7 +422,7 @@ export default function MitsubishiVrfServicePage() {
               If your City Multi is currently down, start with{" "}
               <Link
                 href="/services/vrv-vrf-repair"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF repair
               </Link>
@@ -433,14 +433,14 @@ export default function MitsubishiVrfServicePage() {
               For long-term reliability, add a{" "}
               <Link
                 href="/services/vrv-vrf-maintenance"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF maintenance agreement
               </Link>{" "}
               with scheduled PMs and performance reporting. Manage a mixed portfolio? See{" "}
               <Link
                 href="/services/daikin-vrv-service"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 Daikin VRV service
               </Link>{" "}
@@ -453,7 +453,7 @@ export default function MitsubishiVrfServicePage() {
       {/* 8. FAQ */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -463,7 +463,7 @@ export default function MitsubishiVrfServicePage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -477,7 +477,7 @@ export default function MitsubishiVrfServicePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 Mitsubishi City Multi Problem? Get a Specialist On Site.
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -488,13 +488,13 @@ export default function MitsubishiVrfServicePage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Schedule a Diagnostic
               </Link>

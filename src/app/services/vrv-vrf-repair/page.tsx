@@ -253,10 +253,10 @@ export default function VrfRepairPage() {
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-navy">
+            <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRV/VRF Repair
             </span>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-navy leading-[1.1]">
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
               VRF/VRV System Repair in Orange County
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
@@ -267,13 +267,13 @@ export default function VrfRepairPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 Call for Emergency Repair
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Schedule a Diagnostic
               </Link>
@@ -289,7 +289,7 @@ export default function VrfRepairPage() {
       <section className="py-16 sm:py-20" aria-labelledby="issues-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="issues-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="issues-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Common VRF Problems We Fix
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -303,7 +303,7 @@ export default function VrfRepairPage() {
                 key={i.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{i.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{i.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{i.body}</p>
               </article>
             ))}
@@ -312,11 +312,11 @@ export default function VrfRepairPage() {
       </section>
 
       {/* 4. EMERGENCY RESPONSE CALLOUT */}
-      <section className="py-16 sm:py-20 bg-brand-navy" aria-labelledby="emergency-heading">
+      <section className="py-16 sm:py-20 bg-navy" aria-labelledby="emergency-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-light">
+              <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-light">
                 Emergency Response
               </span>
               <h2
@@ -325,7 +325,7 @@ export default function VrfRepairPage() {
               >
                 4-Hour On-Site Response, Guaranteed
               </h2>
-              <p className="mt-4 text-brand-light leading-relaxed">
+              <p className="mt-4 text-light leading-relaxed">
                 A VRF failure in August isn&apos;t a scheduling problem — it&apos;s a tenant
                 problem. When you call us for emergency repair, we commit to a technician on site
                 within 4 hours across Orange County. After-hours calls reach an on-call tech, not a
@@ -334,7 +334,7 @@ export default function VrfRepairPage() {
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <a
                   href={PHONE_HREF}
-                  className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-white text-brand-navy text-sm font-semibold hover:bg-brand-light transition-colors"
+                  className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-white text-navy text-sm font-semibold hover:bg-light transition-colors"
                 >
                   {PHONE_DISPLAY}
                 </a>
@@ -349,19 +349,19 @@ export default function VrfRepairPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="text-4xl font-bold text-white font-display">4 hrs</div>
-                <div className="mt-2 text-sm text-brand-light">Emergency on-site response</div>
+                <div className="mt-2 text-sm text-light">Emergency on-site response</div>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="text-4xl font-bold text-white font-display">24/7</div>
-                <div className="mt-2 text-sm text-brand-light">On-call dispatch</div>
+                <div className="mt-2 text-sm text-light">On-call dispatch</div>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="text-4xl font-bold text-white font-display">OEM</div>
-                <div className="mt-2 text-sm text-brand-light">Parts only — no substitutions</div>
+                <div className="mt-2 text-sm text-light">Parts only — no substitutions</div>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="text-4xl font-bold text-white font-display">1st</div>
-                <div className="mt-2 text-sm text-brand-light">Visit fix rate we track</div>
+                <div className="mt-2 text-sm text-light">Visit fix rate we track</div>
               </div>
             </div>
           </div>
@@ -372,7 +372,7 @@ export default function VrfRepairPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="process-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="process-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               How a Repair Works
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -386,14 +386,14 @@ export default function VrfRepairPage() {
                 className="bg-white border border-card-border rounded-2xl p-6 transition-transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(10,33,71,0.08)]"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-brand-blue">
+                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface text-blue">
                     {s.icon}
                   </span>
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-blue text-white text-sm font-semibold font-display">
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue text-white text-sm font-semibold font-display">
                     {s.number}
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
                 <p className="mt-2 text-sm text-text-secondary leading-relaxed">{s.description}</p>
               </li>
             ))}
@@ -405,7 +405,7 @@ export default function VrfRepairPage() {
       <section className="py-16 sm:py-20" aria-labelledby="why-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="why-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               Our Approach to VRF Repair
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -418,7 +418,7 @@ export default function VrfRepairPage() {
                 key={w.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{w.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{w.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{w.body}</p>
               </article>
             ))}
@@ -430,7 +430,7 @@ export default function VrfRepairPage() {
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="after-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <h2 id="after-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 id="after-heading" className="text-3xl sm:text-4xl font-bold text-navy">
               What You Get After the Repair
             </h2>
             <p className="mt-3 text-text-secondary">
@@ -444,7 +444,7 @@ export default function VrfRepairPage() {
                 key={i.title}
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
-                <h3 className="text-lg font-semibold text-brand-navy">{i.title}</h3>
+                <h3 className="text-lg font-semibold text-navy">{i.title}</h3>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">{i.body}</p>
               </article>
             ))}
@@ -455,7 +455,7 @@ export default function VrfRepairPage() {
       {/* 8. INTERNAL LINKS */}
       <section className="py-16 sm:py-20" aria-labelledby="related-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="related-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Related Services
           </h2>
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
@@ -463,7 +463,7 @@ export default function VrfRepairPage() {
               Prevent the next breakdown with a scheduled{" "}
               <Link
                 href="/services/vrv-vrf-maintenance"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF maintenance agreement
               </Link>
@@ -473,14 +473,14 @@ export default function VrfRepairPage() {
               Replacing a system instead of repairing it? See our{" "}
               <Link
                 href="/services/vrv-vrf-installation"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 VRF installation service
               </Link>
               , or read more about{" "}
               <Link
                 href="/services/daikin-vrv-service"
-                className="text-brand-blue font-semibold hover:text-brand-navy"
+                className="text-blue font-semibold hover:text-navy"
               >
                 Daikin VRV service
               </Link>{" "}
@@ -493,7 +493,7 @@ export default function VrfRepairPage() {
       {/* 9. FAQ */}
       <section className="py-16 sm:py-20 bg-surface" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy mb-10">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-navy mb-10">
             Frequently Asked Questions
           </h2>
           <dl className="space-y-4">
@@ -503,7 +503,7 @@ export default function VrfRepairPage() {
                 className="bg-white border border-card-border rounded-2xl p-6"
               >
                 <dt>
-                  <h3 className="text-lg font-semibold text-brand-navy">{f.q}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{f.q}</h3>
                 </dt>
                 <dd className="mt-3 text-sm text-text-secondary leading-relaxed">{f.a}</dd>
               </div>
@@ -517,7 +517,7 @@ export default function VrfRepairPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
                 VRF System Down? Call Now.
               </h2>
               <p className="mt-3 text-text-secondary">
@@ -528,13 +528,13 @@ export default function VrfRepairPage() {
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
               >
                 {PHONE_DISPLAY}
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-brand-blue text-brand-blue text-sm font-semibold hover:bg-brand-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
               >
                 Schedule a Diagnostic
               </Link>

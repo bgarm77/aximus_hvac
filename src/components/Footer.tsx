@@ -32,7 +32,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto bg-brand-navy text-white">
+    <footer className="mt-auto bg-navy text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2">
@@ -58,7 +58,7 @@ export default function Footer() {
           </address>
 
           <div className="mt-6">
-            <h3 className="font-display text-xs font-semibold uppercase tracking-wider text-brand-light">
+            <h3 className="font-display text-xs font-semibold uppercase tracking-wider text-light">
               Certifications
             </h3>
             <ul className="mt-3 flex flex-wrap gap-2">
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-brand-light">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-light">
             Services
           </h2>
           <ul className="mt-4 space-y-2">
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-brand-light">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-light">
             Company
           </h2>
           <ul className="mt-4 space-y-2">
@@ -116,7 +116,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-brand-light">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-light">
             Service Areas
           </h2>
           <ul className="mt-4 space-y-2">
@@ -133,7 +133,7 @@ export default function Footer() {
           </ul>
           <Link
             href="/contact"
-            className="mt-5 inline-flex items-center justify-center h-12 px-5 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-sky transition-colors"
+            className="mt-5 inline-flex items-center justify-center h-12 px-5 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-sky transition-colors"
           >
             Get a Quote
           </Link>

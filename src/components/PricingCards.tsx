@@ -69,7 +69,7 @@ export default function PricingCards() {
     <section className="py-16 sm:py-20 bg-surface" aria-labelledby="pricing-heading">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-12">
-          <h2 id="pricing-heading" className="text-3xl sm:text-4xl font-bold text-brand-navy">
+          <h2 id="pricing-heading" className="text-3xl sm:text-4xl font-bold text-navy">
             Preventive Maintenance Agreements
           </h2>
           <p className="mt-3 text-text-secondary">
@@ -85,26 +85,26 @@ export default function PricingCards() {
                 key={t.name}
                 className={`relative flex flex-col rounded-2xl bg-white p-8 transition-transform hover:-translate-y-0.5 ${
                   isHighlight
-                    ? "border-2 border-brand-blue shadow-[0_6px_20px_rgba(10,33,71,0.08)] lg:-mt-4"
+                    ? "border-2 border-blue shadow-[0_6px_20px_rgba(10,33,71,0.08)] lg:-mt-4"
                     : "border border-card-border"
                 }`}
               >
                 {isHighlight && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-brand-blue text-white text-xs font-semibold uppercase tracking-wider px-3 py-1">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-blue text-white text-xs font-semibold uppercase tracking-wider px-3 py-1">
                     Most Popular
                   </span>
                 )}
 
-                <h3 className="text-xl font-bold text-brand-navy">{t.name}</h3>
+                <h3 className="text-xl font-bold text-navy">{t.name}</h3>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-3xl font-bold font-display text-brand-navy">{t.price}</span>
+                  <span className="text-3xl font-bold font-display text-navy">{t.price}</span>
                 </div>
                 <p className="text-sm text-text-secondary">{t.cadence}</p>
 
                 <ul className="mt-6 space-y-3 flex-1">
                   {t.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-brand-navy">
-                      <span className="text-brand-blue">
+                    <li key={f} className="flex items-start gap-2 text-sm text-navy">
+                      <span className="text-blue">
                         <CheckIcon />
                       </span>
                       <span>{f}</span>
@@ -116,8 +116,8 @@ export default function PricingCards() {
                   href="/contact"
                   className={`mt-8 inline-flex items-center justify-center h-12 px-5 rounded-xl text-sm font-semibold transition-colors ${
                     isHighlight
-                      ? "bg-brand-blue text-white hover:bg-brand-navy"
-                      : "border border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white"
+                      ? "bg-blue text-white hover:bg-navy"
+                      : "border border-blue text-blue hover:bg-blue hover:text-white"
                   }`}
                 >
                   Get PMA Pricing

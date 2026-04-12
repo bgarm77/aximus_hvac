@@ -50,8 +50,8 @@ export default function Header() {
             priority
             className="h-10 w-10"
           />
-          <span className="font-display text-xl font-bold tracking-tight text-brand-navy">
-            AXIMUS<span className="text-brand-blue"> HVAC</span>
+          <span className="font-display text-xl font-bold tracking-tight text-navy">
+            AXIMUS<span className="text-blue"> HVAC</span>
           </span>
         </Link>
 
@@ -66,7 +66,7 @@ export default function Header() {
               >
                 <Link
                   href={p.slug}
-                  className="inline-flex items-center gap-1 text-sm font-medium text-brand-navy hover:text-brand-blue transition-colors"
+                  className="inline-flex items-center gap-1 text-sm font-medium text-navy hover:text-blue transition-colors"
                   aria-haspopup="true"
                   aria-expanded={servicesOpen}
                   onFocus={() => setServicesOpen(true)}
@@ -86,7 +86,7 @@ export default function Header() {
                         <li key={sp.slug}>
                           <Link
                             href={sp.slug}
-                            className="block rounded-lg px-3 py-2 text-sm text-brand-navy hover:bg-surface hover:text-brand-blue"
+                            className="block rounded-lg px-3 py-2 text-sm text-navy hover:bg-surface hover:text-blue"
                             role="menuitem"
                           >
                             {sp.title}
@@ -101,7 +101,7 @@ export default function Header() {
               <Link
                 key={p.slug}
                 href={p.slug}
-                className="text-sm font-medium text-brand-navy hover:text-brand-blue transition-colors"
+                className="text-sm font-medium text-navy hover:text-blue transition-colors"
               >
                 {p.title}
               </Link>
@@ -112,13 +112,13 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="tel:+18005551234"
-            className="text-sm font-semibold text-brand-blue hover:text-brand-navy"
+            className="text-sm font-semibold text-blue hover:text-navy"
           >
             (800) 555-1234
           </a>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center h-12 px-5 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+            className="inline-flex items-center justify-center h-12 px-5 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
           >
             Get a Quote
           </Link>
@@ -128,7 +128,7 @@ export default function Header() {
           <a
             href="tel:+18005551234"
             aria-label="Call Aximus HVAC"
-            className="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-brand-blue text-white"
+            className="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-blue text-white"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" strokeLinecap="round" strokeLinejoin="round" />
@@ -136,7 +136,7 @@ export default function Header() {
           </a>
           <button
             type="button"
-            className="inline-flex items-center justify-center w-11 h-11 rounded-lg border border-border-control text-brand-navy"
+            className="inline-flex items-center justify-center w-11 h-11 rounded-lg border border-border-control text-navy"
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
@@ -163,7 +163,7 @@ export default function Header() {
               key={p.slug}
               href={p.slug}
               onClick={() => setMenuOpen(false)}
-              className="py-3 px-2 text-base font-medium text-brand-navy hover:bg-surface rounded-lg"
+              className="py-3 px-2 text-base font-medium text-navy hover:bg-surface rounded-lg"
             >
               {p.title}
             </Link>
@@ -178,7 +178,7 @@ export default function Header() {
                   key={sp.slug}
                   href={sp.slug}
                   onClick={() => setMenuOpen(false)}
-                  className="block py-2 px-2 text-sm text-brand-navy hover:text-brand-blue"
+                  className="block py-2 px-2 text-sm text-navy hover:text-blue"
                 >
                   {sp.title}
                 </Link>
@@ -188,7 +188,7 @@ export default function Header() {
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-2 inline-flex items-center justify-center h-12 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-navy transition-colors"
+            className="mt-2 inline-flex items-center justify-center h-12 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
           >
             Get a Quote
           </Link>
