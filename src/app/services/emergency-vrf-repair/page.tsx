@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import TrustStrip from "@/components/TrustStrip";
 
@@ -164,8 +165,8 @@ export default function EmergencyVrfRepairPage() {
 
       {/* 1. HERO — urgent but calm, phone prominent */}
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               24/7 Emergency Dispatch
             </span>
@@ -205,6 +206,17 @@ export default function EmergencyVrfRepairPage() {
                 </Link>
               </div>
             </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_28px_rgba(10,33,71,0.12)] border border-card-border">
+            <Image
+              src="/images/services/emergency-service.webp"
+              alt="Aximus emergency VRF technician responding on site to a commercial rooftop unit failure in Orange County"
+              width={1200}
+              height={900}
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>

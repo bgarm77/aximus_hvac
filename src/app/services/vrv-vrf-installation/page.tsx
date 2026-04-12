@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import TrustStrip from "@/components/TrustStrip";
 
@@ -222,8 +223,8 @@ export default function VrfInstallationPage() {
 
       {/* 1. HERO */}
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
-          <div className="max-w-3xl">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRV/VRF Installation
             </span>
@@ -249,6 +250,17 @@ export default function VrfInstallationPage() {
                 {PHONE_DISPLAY}
               </a>
             </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_28px_rgba(10,33,71,0.12)] border border-card-border">
+            <Image
+              src="/images/services/installation.webp"
+              alt="Aximus crew installing a commercial Daikin VRV outdoor unit on a rooftop in Orange County"
+              width={1200}
+              height={900}
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>

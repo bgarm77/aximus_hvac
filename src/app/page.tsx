@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import TrustStrip from "@/components/TrustStrip";
 import ProcessSteps from "@/components/ProcessSteps";
@@ -195,8 +196,8 @@ export default function HomePage() {
 
       {/* 1. HERO */}
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 min-h-[560px] flex flex-col justify-center">
-          <div className="max-w-3xl">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 min-h-[560px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRF Service Orange County
             </span>
@@ -220,6 +221,51 @@ export default function HomePage() {
               >
                 Call for Emergency Repair: {PHONE_DISPLAY}
               </a>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_28px_rgba(10,33,71,0.12)] border border-card-border">
+              <Image
+                src="/images/home/hero.webp"
+                alt="Commercial VRF outdoor unit on building rooftop in Orange County California"
+                width={1200}
+                height={900}
+                priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              <div className="relative rounded-xl overflow-hidden border border-card-border">
+                <Image
+                  src="/images/home/hero-1.webp"
+                  alt="Factory-trained technician servicing a Daikin VRV outdoor unit"
+                  width={600}
+                  height={450}
+                  sizes="(min-width: 1024px) 16vw, 33vw"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
+              </div>
+              <div className="relative rounded-xl overflow-hidden border border-card-border">
+                <Image
+                  src="/images/home/hero-2.webp"
+                  alt="Mitsubishi Electric VRF indoor cassette unit installed in a commercial ceiling"
+                  width={600}
+                  height={450}
+                  sizes="(min-width: 1024px) 16vw, 33vw"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
+              </div>
+              <div className="relative rounded-xl overflow-hidden border border-card-border">
+                <Image
+                  src="/images/home/hero-3.webp"
+                  alt="VRF refrigerant piping and branch controllers in a commercial mechanical room"
+                  width={600}
+                  height={450}
+                  sizes="(min-width: 1024px) 16vw, 33vw"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
+              </div>
             </div>
           </div>
         </div>
