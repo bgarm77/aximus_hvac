@@ -7,11 +7,17 @@
   --color-brand-light: #a9cce3;
   --color-surface: #f5faff;
   --color-border-control: #7899ad;
-  --color-text-secondary: #264261;
+  --color-border-subtle: #d7e2ee;
   --color-card-border: #d7e2ee;
+  --color-text-secondary: #264261;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-btn: 12px;
+  --radius-card: 16px;
+  --shadow-header: 0 2px 8px rgba(10, 33, 71, 0.08);
+  --shadow-card-hover: 0 6px 20px rgba(10, 33, 71, 0.08);
 }
 
 html {
@@ -25,12 +31,19 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--color-brand-navy);
+  font-weight: 700;
   letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
 }
 
 :focus-visible {

@@ -1,15 +1,9 @@
 import Link from "next/link";
-import { getNavPages, isPageEnabled } from "@/config/navigation";
+import Image from "next/image";
+import { getNavPages, isPageEnabled, pages } from "@/config/navigation";
+import { getActiveServiceAreas } from "@/config/service-areas";
 
-const SERVICE_SLUGS = [
-  "/services/vrv-vrf-installation",
-  "/services/vrv-vrf-repair",
-  "/services/vrv-vrf-maintenance",
-  "/services/vrv-vrf-commissioning",
-  "/services/daikin-vrv-service",
-  "/services/emergency-vrf-repair",
-  "/services/mitsubishi-vrf-service",
-];
+const SERVICE_PREFIX = "/services/";
 
 const COMPANY_SLUGS = [
   "/about",
@@ -19,39 +13,72 @@ const COMPANY_SLUGS = [
   "/contact",
 ];
 
+const CERTIFICATIONS = [
+  "EPA 608 Universal",
+  "Daikin VRV Certified",
+  "NATE Certified",
+];
+
 export default function Footer() {
   const allEnabled = getNavPages();
-  const services = SERVICE_SLUGS
-    .filter(isPageEnabled)
-    .map((slug) => allEnabled.find((p) => p.slug === slug))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const services = pages
+    .filter((p) => p.enabled && p.showInNav && p.slug.startsWith(SERVICE_PREFIX));
   const company = COMPANY_SLUGS
     .filter(isPageEnabled)
     .map((slug) => allEnabled.find((p) => p.slug === slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
+  const cities = getActiveServiceAreas().slice(0, 8);
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto bg-[color:var(--color-brand-navy)] text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-        <div>
-          <div className="font-display text-xl font-bold">AXIMUS HVAC</div>
-          <p className="mt-3 text-sm text-white/80">
-            VRV/VRF service specialists for commercial buildings across California. 4-hour response, transparent documentation.
-          </p>
-          <div className="mt-5 space-y-1 text-sm text-white/80">
+    <footer className="mt-auto bg-brand-navy text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="lg:col-span-2">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/images/logo.svg"
+              alt="Aximus HVAC logo"
+              width={40}
+              height={40}
+              className="h-10 w-10"
+            />
+            <span className="font-display text-xl font-bold">AXIMUS HVAC</span>
+          </div>
+          <address className="mt-4 not-italic text-sm text-white/80 space-y-1">
+            <div>Aximus HVAC</div>
+            <div>2855 Michelle Drive, Suite 150</div>
+            <div>Irvine, CA 92606</div>
             <a href="tel:+18005551234" className="block hover:text-white">
               (800) 555-1234
             </a>
             <a href="mailto:service@aximushvac.com" className="block hover:text-white">
               service@aximushvac.com
             </a>
+          </address>
+
+          <div className="mt-6">
+            <h3 className="font-display text-xs font-semibold uppercase tracking-wider text-brand-light">
+              Certifications
+            </h3>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {CERTIFICATIONS.map((c) => (
+                <li
+                  key={c}
+                  className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs text-white"
+                >
+                  {c}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-xs text-white/60">
+              License: CSLB C-20 #XXXXXX (pending)
+            </p>
           </div>
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-[color:var(--color-brand-light)]">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-brand-light">
             Services
           </h2>
           <ul className="mt-4 space-y-2">
@@ -66,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-[color:var(--color-brand-light)]">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-brand-light">
             Company
           </h2>
           <ul className="mt-4 space-y-2">
@@ -77,28 +104,45 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <a
+                href="/downloads/aximus-sample-service-report.pdf"
+                className="text-sm text-white/80 hover:text-white"
+              >
+                Download sample service report
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-[color:var(--color-brand-light)]">
-            Coverage
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-brand-light">
+            Service Areas
           </h2>
-          <p className="mt-4 text-sm text-white/80">
-            Serving Los Angeles, Orange County, San Diego, the Bay Area, and the Central Valley.
-          </p>
+          <ul className="mt-4 space-y-2">
+            {cities.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={`/service-areas/${c.slug}`}
+                  className="text-sm text-white/80 hover:text-white"
+                >
+                  {c.city}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <Link
             href="/contact"
-            className="mt-5 inline-flex items-center justify-center h-11 px-5 rounded-xl bg-[color:var(--color-brand-blue)] text-white text-sm font-semibold hover:bg-[color:var(--color-brand-sky)] transition-colors"
+            className="mt-5 inline-flex items-center justify-center h-12 px-5 rounded-xl bg-brand-blue text-white text-sm font-semibold hover:bg-brand-sky transition-colors"
           >
-            Request service
+            Get a Quote
           </Link>
         </div>
       </div>
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-white/60">
-          <p>&copy; {year} Aximus HVAC. All rights reserved. California C-20 licensed.</p>
+          <p>&copy; {year} Aximus HVAC. All rights reserved.</p>
           {isPageEnabled("/privacy-policy") && (
             <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy

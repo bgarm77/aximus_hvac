@@ -12,3 +12,7 @@
 - Root layout with Inter/Sora fonts and brand design tokens in globals.css
 - Header component (sticky, mobile menu, reads from navigation.ts)
 - Footer component (Services + Company link columns, reads from navigation.ts)
+
+### Changed
+- Header: logo image, Services dropdown, shadow-on-scroll, mobile phone-call CTA, animated mobile menu
+- Footer: NAP block, certifications (EPA 608, Daikin VRV, NATE), CSLB C-20 license placeholder, top 8 service-area cities, sample service report link

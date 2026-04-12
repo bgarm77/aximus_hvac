@@ -74,7 +74,7 @@ HVAC contractors in California.
 
 ## Pages Status
 ### Active Pages (live on site)
-- [ ] Homepage (/)
+- [x] Homepage (/)
 - [ ] About (/about)
 - [ ] Services overview (/services)
 - [ ] VRV/VRF Installation (/services/vrv-vrf-installation)
