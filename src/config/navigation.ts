@@ -16,7 +16,7 @@ export const pages: PageConfig[] = [
   { slug: "/services/vrv-vrf-commissioning", title: "VRV/VRF Commissioning", enabled: true, showInNav: true, showInSitemap: true },
   { slug: "/services/daikin-vrv-service", title: "Daikin VRV Service", enabled: true, showInNav: true, showInSitemap: true },
   { slug: "/services/emergency-vrf-repair", title: "Emergency VRF Repair", enabled: true, showInNav: true, showInSitemap: true },
-  { slug: "/services/mitsubishi-vrf-service", title: "Mitsubishi VRF Service", enabled: false, showInNav: true, showInSitemap: true },
+  { slug: "/services/mitsubishi-vrf-service", title: "Mitsubishi VRF Service", enabled: true, showInNav: true, showInSitemap: true },
   { slug: "/property-managers", title: "Property Managers", enabled: true, showInNav: true, showInSitemap: true },
   { slug: "/service-areas", title: "Service Areas", enabled: true, showInNav: true, showInSitemap: true },
   { slug: "/blog", title: "Blog", enabled: true, showInNav: true, showInSitemap: true },
