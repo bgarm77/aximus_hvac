@@ -9,3 +9,6 @@
 - Playwright config for visual testing
 - GitLab + GitHub mirror setup
 - Page toggle system (navigation.ts, service-areas.ts)
+- Root layout with Inter/Sora fonts and brand design tokens in globals.css
+- Header component (sticky, mobile menu, reads from navigation.ts)
+- Footer component (Services + Company link columns, reads from navigation.ts)
