@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import TrustStrip from "@/components/TrustStrip";
 import { getActiveServiceAreas, type ServiceArea } from "@/config/service-areas";
@@ -144,20 +145,28 @@ export default function ServiceAreasPage() {
           <h2 id="map-heading" className="sr-only">
             Service Area Map
           </h2>
-          <div className="rounded-2xl border border-card-border bg-white overflow-hidden">
-            <div
-              aria-hidden
-              className="relative h-64 sm:h-80 bg-[linear-gradient(135deg,#F5FAFF_0%,#A9CCE3_100%)]"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center px-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-blue">
+          <div className="relative rounded-2xl border border-card-border bg-white overflow-hidden">
+            <div className="relative h-64 sm:h-80 lg:h-96">
+              <Image
+                src="/images/services/service-areas-banner.webp"
+                alt="Southern California coastline and commercial corridors Aximus services across Orange County"
+                fill
+                sizes="(min-width: 1280px) 1200px, 100vw"
+                className="object-cover"
+              />
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,33,71,0.72)_0%,rgba(10,33,71,0.45)_55%,rgba(10,33,71,0.15)_100%)]"
+              />
+              <div className="absolute inset-0 flex items-center">
+                <div className="px-6 sm:px-10 max-w-xl">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-sky">
                     Primary Service Zone
                   </p>
-                  <p className="mt-2 text-2xl sm:text-3xl font-bold text-navy font-display">
+                  <p className="mt-2 text-2xl sm:text-3xl font-bold text-white font-display">
                     Orange County, California
                   </p>
-                  <p className="mt-2 text-sm text-text-secondary max-w-md mx-auto">
+                  <p className="mt-2 text-sm text-white/85">
                     From the coast at Huntington Beach and Newport Beach inland through Irvine,
                     Tustin, Orange, Santa Ana, Costa Mesa, and Anaheim.
                   </p>
