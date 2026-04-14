@@ -6,6 +6,7 @@ import ProcessSteps from "@/components/ProcessSteps";
 import PricingCards from "@/components/PricingCards";
 import SampleReportCTA from "@/components/SampleReportCTA";
 import ServiceAreaMap from "@/components/ServiceAreaMap";
+import ContactForm from "@/components/ContactForm";
 
 const PHONE_DISPLAY = "(800) 555-1234";
 const PHONE_HREF = "tel:+18005551234";
@@ -432,32 +433,40 @@ export default function HomePage() {
 
       {/* 10. FINAL CTA */}
       <section className="bg-surface border-t border-border-subtle" aria-labelledby="final-cta">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="rounded-2xl bg-white border border-card-border p-8 sm:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="max-w-2xl">
-              <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
-                Need Emergency VRF Repair? Call Now.
-              </h2>
-              <p className="mt-3 text-text-secondary">
-                4-hour response across Orange County. Factory-trained techs, OEM parts, documented
-                reports.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+          <div>
+            <h2 id="final-cta" className="text-3xl sm:text-4xl font-bold text-navy">
+              Request a Free VRF System Assessment
+            </h2>
+            <p className="mt-4 text-text-secondary leading-relaxed">
+              Tell us about your system and we&apos;ll reply within one business day. A VRF
+              specialist reviews every request — no call centers, no generalist dispatch.
+            </p>
+            <ul className="mt-6 space-y-3 text-sm text-navy">
+              <li className="flex gap-3">
+                <span className="mt-1 inline-block w-1.5 h-1.5 rounded-full bg-sky shrink-0" />
+                4-hour emergency response across Orange County
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 inline-block w-1.5 h-1.5 rounded-full bg-sky shrink-0" />
+                Factory-trained on Daikin VRV and Mitsubishi Electric
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 inline-block w-1.5 h-1.5 rounded-full bg-sky shrink-0" />
+                Written service report after every visit
+              </li>
+            </ul>
+            <div className="mt-8 rounded-xl border border-card-border bg-white p-5">
+              <p className="text-sm text-text-secondary">System down right now?</p>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-navy transition-colors"
+                className="mt-1 inline-flex items-center gap-2 text-lg font-bold text-blue hover:text-navy"
               >
                 {PHONE_DISPLAY}
               </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-12 px-6 rounded-xl border border-blue text-blue text-sm font-semibold hover:bg-blue hover:text-white transition-colors"
-              >
-                Request Assessment
-              </Link>
             </div>
           </div>
+          <ContactForm />
         </div>
       </section>
     </>

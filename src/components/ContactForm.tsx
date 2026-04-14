@@ -1,12 +1,19 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 const ACCESS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "YOUR_WEB3FORMS_ACCESS_KEY";
+
+const NAME_MAX = 100;
+const COMPANY_MAX = 150;
+const MESSAGE_MAX = 2000;
+const RATE_LIMIT_MS = 10_000;
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 const serviceTypes = [
   "VRV/VRF Installation",
@@ -18,29 +25,111 @@ const serviceTypes = [
   "Other / Not Sure Yet",
 ];
 
+function sanitize(value: string): string {
+  return value
+    .replace(/<[^>]*>/g, "")
+    .replace(/[\u0000-\u001F\u007F]/g, "")
+    .trim();
+}
+
+function isValidUsPhone(value: string): boolean {
+  const digits = value.replace(/\D/g, "");
+  return digits.length === 10 || (digits.length === 11 && digits.startsWith("1"));
+}
+
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [messageLength, setMessageLength] = useState(0);
+  const lastSubmitRef = useRef<number>(0);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setStatus("submitting");
     setErrorMessage("");
 
-    const formData = new FormData(event.currentTarget);
-    formData.append("access_key", ACCESS_KEY);
-    formData.append("subject", "New VRF Assessment Request — Aximus HVAC");
-    formData.append("from_name", "Aximus HVAC Website");
+    const now = Date.now();
+    const elapsed = now - lastSubmitRef.current;
+    if (lastSubmitRef.current > 0 && elapsed < RATE_LIMIT_MS) {
+      const wait = Math.ceil((RATE_LIMIT_MS - elapsed) / 1000);
+      setStatus("error");
+      setErrorMessage(`Please wait ${wait} seconds before submitting again.`);
+      return;
+    }
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    if ((formData.get("botcheck") as string) ?? "") {
+      setStatus("error");
+      setErrorMessage("Submission blocked.");
+      return;
+    }
+
+    const rawName = (formData.get("name") as string) ?? "";
+    const rawCompany = (formData.get("company") as string) ?? "";
+    const rawEmail = (formData.get("email") as string) ?? "";
+    const rawPhone = (formData.get("phone") as string) ?? "";
+    const rawService = (formData.get("service_type") as string) ?? "";
+    const rawMessage = (formData.get("message") as string) ?? "";
+
+    const name = sanitize(rawName).slice(0, NAME_MAX);
+    const company = sanitize(rawCompany).slice(0, COMPANY_MAX);
+    const email = sanitize(rawEmail);
+    const phone = sanitize(rawPhone);
+    const service = sanitize(rawService);
+    const message = sanitize(rawMessage).slice(0, MESSAGE_MAX);
+
+    if (!name) {
+      setStatus("error");
+      setErrorMessage("Please enter your name.");
+      return;
+    }
+    if (!EMAIL_RE.test(email)) {
+      setStatus("error");
+      setErrorMessage("Please enter a valid email address.");
+      return;
+    }
+    if (!isValidUsPhone(phone)) {
+      setStatus("error");
+      setErrorMessage("Please enter a valid US phone number.");
+      return;
+    }
+    if (!serviceTypes.includes(service)) {
+      setStatus("error");
+      setErrorMessage("Please select a service type.");
+      return;
+    }
+    if (!message) {
+      setStatus("error");
+      setErrorMessage("Please include a short message.");
+      return;
+    }
+
+    setStatus("submitting");
+    lastSubmitRef.current = now;
+
+    const payload = new FormData();
+    payload.append("access_key", ACCESS_KEY);
+    payload.append("subject", "New VRF Assessment Request — Aximus HVAC");
+    payload.append("from_name", "Aximus HVAC Website");
+    payload.append("botcheck", "");
+    payload.append("name", name);
+    payload.append("company", company);
+    payload.append("email", email);
+    payload.append("phone", phone);
+    payload.append("service_type", service);
+    payload.append("message", message);
 
     try {
       const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
-        body: formData,
+        body: payload,
       });
       const data = await response.json();
       if (data.success) {
         setStatus("success");
-        (event.target as HTMLFormElement).reset();
+        form.reset();
+        setMessageLength(0);
       } else {
         setStatus("error");
         setErrorMessage(data.message ?? "Submission failed. Please call us instead.");
@@ -77,9 +166,21 @@ export default function ContactForm() {
     <form
       onSubmit={onSubmit}
       className="rounded-2xl border border-card-border bg-white p-6 sm:p-8 space-y-5"
-      noValidate
     >
-      <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} />
+      <div
+        aria-hidden
+        className="absolute -left-[9999px] top-auto w-px h-px overflow-hidden"
+      >
+        <label htmlFor="botcheck">Leave this field empty</label>
+        <input
+          id="botcheck"
+          type="text"
+          name="botcheck"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -87,7 +188,7 @@ export default function ContactForm() {
             htmlFor="name"
             className="block text-sm font-semibold text-navy"
           >
-            Name
+            Name <span className="text-red-600" aria-hidden>*</span>
           </label>
           <input
             id="name"
@@ -95,6 +196,7 @@ export default function ContactForm() {
             type="text"
             autoComplete="name"
             required
+            maxLength={NAME_MAX}
             className="mt-2 block w-full h-11 rounded-xl border border-border-control bg-white px-3 text-sm text-navy placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-sky"
             placeholder="Jane Smith"
           />
@@ -111,6 +213,7 @@ export default function ContactForm() {
             name="company"
             type="text"
             autoComplete="organization"
+            maxLength={COMPANY_MAX}
             className="mt-2 block w-full h-11 rounded-xl border border-border-control bg-white px-3 text-sm text-navy placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-sky"
             placeholder="Acme Property Group"
           />
@@ -123,7 +226,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-sm font-semibold text-navy"
           >
-            Email
+            Email <span className="text-red-600" aria-hidden>*</span>
           </label>
           <input
             id="email"
@@ -131,6 +234,7 @@ export default function ContactForm() {
             type="email"
             autoComplete="email"
             required
+            maxLength={254}
             className="mt-2 block w-full h-11 rounded-xl border border-border-control bg-white px-3 text-sm text-navy placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-sky"
             placeholder="jane@example.com"
           />
@@ -140,7 +244,7 @@ export default function ContactForm() {
             htmlFor="phone"
             className="block text-sm font-semibold text-navy"
           >
-            Phone
+            Phone <span className="text-red-600" aria-hidden>*</span>
           </label>
           <input
             id="phone"
@@ -148,6 +252,8 @@ export default function ContactForm() {
             type="tel"
             autoComplete="tel"
             required
+            maxLength={20}
+            pattern="[\d\s().+\-]{10,20}"
             className="mt-2 block w-full h-11 rounded-xl border border-border-control bg-white px-3 text-sm text-navy placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-sky"
             placeholder="(949) 555-0123"
           />
@@ -159,7 +265,7 @@ export default function ContactForm() {
           htmlFor="service_type"
           className="block text-sm font-semibold text-navy"
         >
-          Service Type
+          Service Type <span className="text-red-600" aria-hidden>*</span>
         </label>
         <select
           id="service_type"
@@ -184,17 +290,26 @@ export default function ContactForm() {
           htmlFor="message"
           className="block text-sm font-semibold text-navy"
         >
-          Message
+          Message <span className="text-red-600" aria-hidden>*</span>
         </label>
         <textarea
           id="message"
           name="message"
           rows={5}
           required
+          maxLength={MESSAGE_MAX}
+          onChange={(e) => setMessageLength(e.target.value.length)}
           className="mt-2 block w-full rounded-xl border border-border-control bg-white px-3 py-2 text-sm text-navy placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-sky"
           placeholder="Tell us about your system (Daikin VRV IV, Mitsubishi City Multi, etc.), building size, and what you need."
         />
+        <p className="mt-1 text-xs text-text-secondary text-right">
+          {messageLength} / {MESSAGE_MAX}
+        </p>
       </div>
+
+      <p className="text-xs text-text-secondary">
+        <span className="text-red-600" aria-hidden>*</span> Required fields
+      </p>
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
         <p className="text-xs text-text-secondary">
