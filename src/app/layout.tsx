@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import "./globals.css";
 
 const inter = Inter({
@@ -45,6 +46,7 @@ export default function RootLayout({
       className={`${inter.variable} ${sora.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">
+        <LocalBusinessSchema />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

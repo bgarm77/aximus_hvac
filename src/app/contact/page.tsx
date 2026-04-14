@@ -298,42 +298,15 @@ export default function ContactPage() {
               </address>
             </div>
 
-            <div
-              className="relative w-full aspect-[4/3] rounded-2xl border border-card-border bg-white overflow-hidden flex items-center justify-center"
-              role="img"
-              aria-label="Map placeholder — Aximus HVAC service area covering Orange County, California"
-            >
-              <div className="absolute inset-0 bg-[linear-gradient(135deg,#F5FAFF_0%,#A9CCE3_100%)]" />
-              <div className="relative text-center px-6">
-                <svg
-                  width="56"
-                  height="56"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden
-                  className="mx-auto text-blue"
-                >
-                  <path d="M12 22s8-7 8-13a8 8 0 1 0-16 0c0 6 8 13 8 13Z" />
-                  <circle cx="12" cy="9" r="3" />
-                </svg>
-                <p className="mt-4 text-base font-semibold text-navy">
-                  Orange County, California
-                </p>
-                <p className="mt-1 text-sm text-text-secondary">
-                  Interactive map coming soon. Call{" "}
-                  <a
-                    href={PHONE_HREF}
-                    className="text-blue font-semibold hover:text-navy"
-                  >
-                    {PHONE_DISPLAY}
-                  </a>{" "}
-                  to confirm coverage for your site.
-                </p>
-              </div>
+            <div className="relative w-full aspect-[4/3] rounded-2xl border border-card-border bg-white overflow-hidden">
+              <iframe
+                title="Map of Aximus HVAC service area — Irvine, Orange County, California"
+                src="https://www.google.com/maps?q=2855+Michelle+Drive+Suite+150,+Irvine,+CA+92606&z=10&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full border-0"
+              />
             </div>
           </div>
         </div>

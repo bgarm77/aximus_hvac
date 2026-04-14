@@ -109,6 +109,12 @@ Set enabled: false to hide from nav menu + sitemap but keep the code ready.
 **Next:** (what to do in next session)
 **Issues:** (any problems found, or "none")
 
+### Session 2026-04-13
+**Done:** Added hero images to three remaining pages (About, Service Areas, Property Managers). About and Property Managers use a 2-column hero layout matching the Daikin service page pattern (text left, image right, priority loading, shadow + rounded corners). Service Areas "Primary Service Zone" section: replaced the gradient placeholder with a real banner image under a dark left-to-right gradient overlay so the white headline stays legible. Updated `daikin-vrv-units.webp` asset. Typecheck clean. Commit `834424d`.
+**Files changed:** src/app/about/page.tsx, src/app/service-areas/page.tsx, src/app/property-managers/page.tsx, public/images/services/about-skyline.webp (new), public/images/services/service-areas-banner.webp (new), public/images/services/property-managers.webp (new), public/images/services/daikin-vrv-units.webp, CLAUDE.md
+**Next:** Register Web3Forms API key and wire up contact form, SEO optimization pass (titles/meta/schema audit across all 17 pages), run screenshot audit via `npm run screenshots` to verify visual consistency and responsive layouts on desktop + mobile, then deploy to Webflow Cloud via GitHub mirror
+**Issues:** none
+
 ### Session 2026-04-12
 **Done:** Created all 17 pages, trust components, page toggle system, service areas config, brand design system applied, sample service report created, contact form XSS protection added
 **Files changed:** All pages in src/app/, all components in src/components/, src/config/navigation.ts, src/config/service-areas.ts, tailwind.config.ts, globals.css, public/downloads/aximus-sample-service-report.pdf
