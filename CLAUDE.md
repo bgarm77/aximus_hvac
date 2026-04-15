@@ -97,6 +97,30 @@ HVAC contractors in California.
 Pages are toggled via src/config/navigation.ts
 Set enabled: false to hide from nav menu + sitemap but keep the code ready.
 
+## Advanced SEO Skills (use after deployment)
+
+### Available Skills
+- /seo-technical — Deep technical audit of all pages (replaces Screaming Frog)
+- /seo-keywords — Keyword clustering + content map builder
+- /seo-content — SEO blog article creation from keyword map
+- /seo-backlinks — Backlink prospect research + outreach email generator
+
+### File Locations
+- Keyword map: src/content/seo-keyword-map.md
+- Outreach tracker: src/content/seo-outreach-tracker.md
+
+### Post-Launch Weekly Routine (30 min/week)
+1. Every week: create 1 blog post → /seo-content
+2. Every month: run /seo-technical on all pages
+3. Every month: update keyword map → /seo-keywords
+4. Every month: 5 new backlink prospects → /seo-backlinks
+
+### Expected Results
+- Month 1: Google indexes site, rankings for long-tail keywords
+- Month 2-3: Organic traffic growth, first leads from search
+- Month 3-6: Strong positions for main California keywords
+- Month 6-12: Stable top positions, consistent lead flow
+
 ## Known Issues
 (none yet — update as issues are found)
 
