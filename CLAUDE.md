@@ -133,6 +133,40 @@ Set enabled: false to hide from nav menu + sitemap but keep the code ready.
 **Next:** (what to do in next session)
 **Issues:** (any problems found, or "none")
 
+### Session 2025-04-15
+**Done:**
+- Connected Web3Forms contact form (API key configured in Vercel env vars)
+- SEO audit completed on all 18 pages, all critical issues fixed
+- PageSpeed optimization: build passes 26/26 pages, zero warnings
+- Screenshot audit: 30 screenshots (15 pages × desktop + mobile), zero issues
+- Created 4 advanced SEO Skills: seo-technical, seo-keywords, seo-content, seo-backlinks
+- Added robots.txt blocking all crawlers until site is ready for SEO launch
+- Deployed to Vercel (aximus-hvac.vercel.app)
+- Connected domain aximushvac.com via GoDaddy DNS
+- Verified Google Search Console
+- Connected Google Analytics 4 (G-JTFLNVXMWK)
+- Connected Microsoft Clarity (wc2vxwrolh)
+- Fixed hero section top padding
+
+**Files changed:**
+- src/app/contact/page.tsx (Web3Forms)
+- src/app/robots.ts (noindex)
+- src/app/layout.tsx (GA4 + Clarity)
+- src/app/page.tsx (hero padding)
+- .claude/skills/seo-technical/SKILL.md (new)
+- .claude/skills/seo-keywords/SKILL.md (new)
+- .claude/skills/seo-content/SKILL.md (new)
+- .claude/skills/seo-backlinks/SKILL.md (new)
+
+**Next:**
+- Replace AI photos with real photos
+- Collect first client reviews
+- Write 3-5 blog posts via /seo-content
+- Set up Google Business Profile
+- When ready: change robots.ts to Allow: / and open indexing
+
+**Issues:** none
+
 ### Session 2026-04-13
 **Done:** Added hero images to three remaining pages (About, Service Areas, Property Managers). About and Property Managers use a 2-column hero layout matching the Daikin service page pattern (text left, image right, priority loading, shadow + rounded corners). Service Areas "Primary Service Zone" section: replaced the gradient placeholder with a real banner image under a dark left-to-right gradient overlay so the white headline stays legible. Updated `daikin-vrv-units.webp` asset. Typecheck clean. Commit `834424d`.
 **Files changed:** src/app/about/page.tsx, src/app/service-areas/page.tsx, src/app/property-managers/page.tsx, public/images/services/about-skyline.webp (new), public/images/services/service-areas-banner.webp (new), public/images/services/property-managers.webp (new), public/images/services/daikin-vrv-units.webp, CLAUDE.md
