@@ -10,12 +10,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "VRF Maintenance Contract Orange County | PMA Plans | Aximus",
+  title: { absolute: "VRF Maintenance Plans, Orange County CA | Aximus HVAC" },
   description:
     "VRF maintenance plans for commercial buildings in Orange County. Quarterly PMs, refrigerant checks, documented reports. Protect your warranty and cut downtime.",
   alternates: { canonical: "/services/vrv-vrf-maintenance" },
   openGraph: {
-    title: "VRF Maintenance Contract Orange County | PMA Plans | Aximus",
+    title: "VRF Maintenance Plans, Orange County CA | Aximus HVAC",
     description:
       "VRF preventive maintenance agreements for commercial buildings in Orange County. Three tiers, documented visits, 4-hour emergency response on Premium.",
     url: `${SITE_URL}/services/vrv-vrf-maintenance`,

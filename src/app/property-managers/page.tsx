@@ -9,12 +9,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "HVAC Vendor for Commercial Property Management | Aximus",
+  title: { absolute: "VRF Vendor for Property Managers, CA | Aximus HVAC" },
   description:
     "One VRF service vendor for your entire portfolio. Standardized reporting, portfolio pricing, and 4-hour response across California commercial property portfolios.",
   alternates: { canonical: "/property-managers" },
   openGraph: {
-    title: "HVAC Vendor for Commercial Property Management | Aximus",
+    title: "VRF Vendor for Property Managers, CA | Aximus HVAC",
     description:
       "Consolidate VRF service across every building you manage. Portfolio discounts, quarterly performance reviews, and one point of contact.",
     url: `${SITE_URL}/property-managers`,

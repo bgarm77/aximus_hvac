@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const url = `${SITE_URL}/blog/${post.slug}`;
   return {
-    title: `${post.title} | Aximus HVAC`,
+    title: { absolute: `${post.title} | Aximus HVAC` },
     description: post.description,
     keywords: post.keywords,
     alternates: { canonical: `/blog/${post.slug}` },

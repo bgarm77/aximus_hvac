@@ -10,12 +10,12 @@ const EMAIL_HREF = "mailto:service@aximushvac.com";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "Contact Aximus | Free HVAC Quote Orange County",
+  title: { absolute: "Contact Aximus HVAC | Free VRF Quote, California" },
   description:
     "Get a free HVAC quote in Orange County from Aximus VRF specialists. 4-hour emergency response, transparent pricing, factory-trained Daikin and Mitsubishi techs.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact Aximus | Free HVAC Quote Orange County",
+    title: "Contact Aximus HVAC | Free VRF Quote, California",
     description:
       "Request a free VRF system assessment. Aximus serves Orange County commercial buildings with 4-hour emergency response and transparent documentation.",
     url: `${SITE_URL}/contact`,

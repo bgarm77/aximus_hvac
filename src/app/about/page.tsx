@@ -8,9 +8,9 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "About Aximus | VRF Specialist HVAC Orange County",
+  title: { absolute: "About Aximus HVAC | VRF Specialist, Orange County CA" },
   description:
-    "Aximus is Orange County's dedicated VRF specialist. EPA 608 Universal, Daikin VRV factory trained, NATE certified. Schedule your free VRF system assessment.",
+    "Aximus is Orange County's dedicated VRF specialist. EPA 608 Universal, Daikin factory trained, NATE certified. Book a free VRF system assessment.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Aximus | VRF Specialist HVAC Orange County",

@@ -13,7 +13,7 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "VRF Service Orange County | Dedicated VRV/VRF Specialist",
+  title: { absolute: "VRF Service Orange County | Aximus HVAC California" },
   description:
     "Factory-certified VRF service in Orange County. Daikin VRV and Mitsubishi Electric specialists, 4-hour emergency response, transparent pricing.",
   alternates: { canonical: "/" },

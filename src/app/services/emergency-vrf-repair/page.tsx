@@ -8,12 +8,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "Emergency HVAC Repair Orange County | 4-Hour VRF Response",
+  title: { absolute: "Emergency VRF Repair, Orange County CA | Aximus HVAC" },
   description:
     "Emergency VRF repair in Orange County with a 4-hour response guarantee. Certified techs, written estimate before work starts, after-hours and weekend service.",
   alternates: { canonical: "/services/emergency-vrf-repair" },
   openGraph: {
-    title: "Emergency HVAC Repair Orange County | 4-Hour VRF Response",
+    title: "Emergency VRF Repair, Orange County CA | Aximus HVAC",
     description:
       "Emergency VRF repair in Orange County. 4-hour on-site response, factory-certified technicians, written estimate before work begins, 24/7 dispatch.",
     url: `${SITE_URL}/services/emergency-vrf-repair`,

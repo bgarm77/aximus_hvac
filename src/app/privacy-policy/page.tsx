@@ -9,7 +9,7 @@ const LAST_UPDATED = "April 12, 2026";
 const COMPANY = "Aximus HVAC Solutions, Inc.";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Aximus HVAC | California",
+  title: { absolute: "Privacy Policy | Aximus HVAC California" },
   description:
     "How Aximus HVAC Solutions, Inc. collects, uses, and protects personal information. CCPA rights for California residents, cookie policy, and contact details.",
   alternates: { canonical: "/privacy-policy" },

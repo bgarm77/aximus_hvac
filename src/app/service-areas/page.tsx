@@ -9,12 +9,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "VRF/VRV Service Areas in Southern California | Aximus",
+  title: { absolute: "VRF/VRV Service Areas in California | Aximus HVAC" },
   description:
     "Commercial VRF/VRV service across Orange County and Southern California. Same-week scheduling, 4-hour emergency response, factory-trained Daikin and Mitsubishi techs.",
   alternates: { canonical: "/service-areas" },
   openGraph: {
-    title: "VRF/VRV Service Areas in Southern California | Aximus",
+    title: "VRF/VRV Service Areas in California | Aximus HVAC",
     description:
       "Where we service commercial VRF and VRV systems. Orange County coverage with planned expansion into Los Angeles and San Diego counties.",
     url: `${SITE_URL}/service-areas`,

@@ -8,12 +8,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "Daikin VRV Repair Orange County | Factory-Trained | Aximus",
+  title: { absolute: "Daikin VRV Service, Orange County CA | Aximus HVAC" },
   description:
     "Daikin VRV service in Orange County. Factory-trained on VRV IV, V, and IV+. We resolve U4, E7, L3 errors with OEM parts and warranty-compliant documentation.",
   alternates: { canonical: "/services/daikin-vrv-service" },
   openGraph: {
-    title: "Daikin VRV Repair Orange County | Factory-Trained | Aximus",
+    title: "Daikin VRV Service, Orange County CA | Aximus HVAC",
     description:
       "Daikin VRV service for commercial buildings in Orange County. Factory-trained technicians, OEM parts, and warranty-compliant documentation per Daikin service bulletins.",
     url: `${SITE_URL}/services/daikin-vrv-service`,

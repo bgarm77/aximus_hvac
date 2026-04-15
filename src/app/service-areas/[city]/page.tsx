@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   const area = getServiceArea(slug);
   if (!area || !area.enabled) return {};
 
-  const title = `VRF/VRV Service in ${area.city}, California | Aximus`;
+  const title = `VRF/VRV Service in ${area.city}, CA | Aximus HVAC`;
   const description = `Commercial VRF and VRV service in ${area.city}, CA. Factory-trained Daikin and Mitsubishi techs, same-week scheduling, 4-hour emergency response for Premium MSA clients.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: `/service-areas/${slug}` },
     openGraph: {

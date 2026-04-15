@@ -8,7 +8,7 @@ const PHONE_HREF = "tel:+18005551234";
 const POSTS_PER_PAGE = 9;
 
 export const metadata: Metadata = {
-  title: "VRF/VRV Resources & Insights | Aximus HVAC | Orange County",
+  title: { absolute: "VRF/VRV Resources & Insights | Aximus HVAC California" },
   description:
     "Practical VRF/VRV maintenance tips, Daikin and Mitsubishi error code guides, and industry updates for Orange County facility and property managers.",
   alternates: { canonical: "/blog" },

@@ -8,9 +8,9 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "Commercial VRF Services Orange County | Aximus HVAC",
+  title: { absolute: "Commercial VRF Services, Orange County | Aximus HVAC" },
   description:
-    "Commercial VRF services in Orange County — installation, repair, maintenance, commissioning, and 4-hour emergency response. Factory-trained Daikin and Mitsubishi techs.",
+    "Commercial VRF services in Orange County: installation, repair, maintenance, commissioning, 4-hour emergency response. Daikin and Mitsubishi factory-trained.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Commercial VRF Services Orange County | Aximus HVAC",

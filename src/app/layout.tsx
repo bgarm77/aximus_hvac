@@ -33,6 +33,18 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Aximus HVAC",
     url: "https://aximushvac.com",
+    images: [
+      {
+        url: "/images/home/hero.webp",
+        width: 1200,
+        height: 900,
+        alt: "Aximus HVAC — Commercial VRV/VRF service specialists in California",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/home/hero.webp"],
   },
   robots: { index: true, follow: true },
 };

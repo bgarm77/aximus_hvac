@@ -8,12 +8,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "VRF Commissioning California | Daikin & Mitsubishi | Aximus",
+  title: { absolute: "VRF System Commissioning, California | Aximus HVAC" },
   description:
     "VRF commissioning in California for GCs and MEP firms. CSLB C-20, $1M GL, Daikin factory trained. Startup, testing, controls integration, documentation, owner training.",
   alternates: { canonical: "/services/vrv-vrf-commissioning" },
   openGraph: {
-    title: "VRF Commissioning California | Daikin & Mitsubishi | Aximus",
+    title: "VRF System Commissioning, California | Aximus HVAC",
     description:
       "Specialty VRF commissioning subcontractor for California GCs and MEP firms. Factory-trained on Daikin VRV IV/V and Mitsubishi City Multi.",
     url: `${SITE_URL}/services/vrv-vrf-commissioning`,

@@ -8,12 +8,12 @@ const PHONE_HREF = "tel:+18005551234";
 const SITE_URL = "https://aximushvac.com";
 
 export const metadata: Metadata = {
-  title: "Mitsubishi VRF Repair California | City Multi Specialist | Aximus",
+  title: { absolute: "Mitsubishi VRF Service, California | Aximus HVAC" },
   description:
     "Mitsubishi VRF repair in California. Factory-trained on City Multi PUMY and PUHY. AE-200A, M-NET, and BACnet integration. OEM parts and warranty-compliant reports.",
   alternates: { canonical: "/services/mitsubishi-vrf-service" },
   openGraph: {
-    title: "Mitsubishi VRF Repair California | City Multi Specialist | Aximus",
+    title: "Mitsubishi VRF Service, California | Aximus HVAC",
     description:
       "Mitsubishi VRF service for commercial properties in California. City Multi PUMY and PUHY, AE-200A controls, M-NET diagnostics, and BACnet integration.",
     url: `${SITE_URL}/services/mitsubishi-vrf-service`,
