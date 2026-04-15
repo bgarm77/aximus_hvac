@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Sora } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -47,6 +47,12 @@ export const metadata: Metadata = {
     images: ["/images/home/hero.webp"],
   },
   robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0A2147",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
