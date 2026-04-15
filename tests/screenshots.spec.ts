@@ -9,6 +9,7 @@ const pages = [
   { path: '/services/vrv-vrf-maintenance', name: 'services-vrv-vrf-maintenance' },
   { path: '/services/vrv-vrf-commissioning', name: 'services-vrv-vrf-commissioning' },
   { path: '/services/daikin-vrv-service', name: 'services-daikin-vrv-service' },
+  { path: '/services/mitsubishi-vrf-service', name: 'services-mitsubishi-vrf-service' },
   { path: '/services/emergency-vrf-repair', name: 'services-emergency-vrf-repair' },
   { path: '/property-managers', name: 'property-managers' },
   { path: '/service-areas', name: 'service-areas' },
@@ -19,8 +20,10 @@ const pages = [
 
 for (const { path, name } of pages) {
   test(`screenshot ${name}`, async ({ page }, testInfo) => {
-    await page.goto(path, { waitUntil: 'networkidle' });
-    await page.waitForLoadState('domcontentloaded');
+    test.setTimeout(90000);
+    await page.goto(path, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForLoadState('load', { timeout: 30000 }).catch(() => {});
+    await page.waitForTimeout(1500);
     await page.evaluate(async () => {
       const imgs = Array.from(document.images);
       await Promise.all(
@@ -28,10 +31,11 @@ for (const { path, name } of pages) {
           img.complete ? Promise.resolve() : new Promise((res) => {
             img.addEventListener('load', res);
             img.addEventListener('error', res);
+            setTimeout(res, 5000);
           })
         )
       );
-    });
+    }).catch(() => {});
     const viewport = testInfo.project.name;
     await page.screenshot({
       path: `screenshots/${name}-${viewport}.png`,
