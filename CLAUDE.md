@@ -133,6 +133,12 @@ Set enabled: false to hide from nav menu + sitemap but keep the code ready.
 **Next:** (what to do in next session)
 **Issues:** (any problems found, or "none")
 
+### Session 2026-04-15
+**Done:** Added complete favicon set from realfavicongenerator (favicon.ico, 16x16, 32x32, apple-touch-icon, android-chrome 192/512, site.webmanifest) and wired them into the root layout; removed the legacy `src/app/favicon.ico`. Fine-tuned hero spacing across the top of the homepage (removed extra whitespace between header and hero, added small top padding, then reduced it slightly). Also updated CLAUDE.md session notes after full deployment from the earlier part of the day.
+**Files changed:** public/favicon.ico, public/favicon-16x16.png, public/favicon-32x32.png, public/apple-touch-icon.png, public/android-chrome-192x192.png, public/android-chrome-512x512.png, public/site.webmanifest, src/app/layout.tsx, src/app/favicon.ico (removed), src/app/page.tsx, CLAUDE.md
+**Next:** Replace AI-generated photos with real site/equipment photography; collect and publish first client reviews; write 3-5 blog posts via /seo-content; set up Google Business Profile; once ready, flip `src/app/robots.ts` from noindex to `Allow: /` to open search indexing. After launch, start the weekly /seo-content cadence and monthly /seo-technical + /seo-keywords + /seo-backlinks routine.
+**Issues:** none
+
 ### Session 2025-04-15
 **Done:**
 - Connected Web3Forms contact form (API key configured in Vercel env vars)
