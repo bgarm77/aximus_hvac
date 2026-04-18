@@ -134,10 +134,19 @@ Set enabled: false to hide from nav menu + sitemap but keep the code ready.
 **Issues:** (any problems found, or "none")
 
 ### Session 2026-04-18
-**Done:** Replaced `src/components/PricingCards.tsx` with new 4-tier PMA pricing component (added Enterprise tier; switched pricing display from ranges to "Starting at $X" format; Premium reports changed from monthly to quarterly; added per-unit pricing logic disclaimer). Installed missing `lucide-react` dependency (used for Check/Star/Building2 icons). Verified with ESLint (`npm run lint`) and TypeScript (`npx tsc --noEmit`) — both clean. Dev server ran successfully on http://localhost:3000. Two commits pushed to `github/main`: `e153bac` (PricingCards 4-tier update) and `65cf18c` (lucide-react dependency + previous session notes).
-**Files changed:** src/components/PricingCards.tsx (208 insertions, 91 deletions), package.json, package-lock.json, CLAUDE.md
-**Next:** Visual QA on the 4-tier layout at /services/vrv-vrf-maintenance (desktop row-of-4, Professional "MOST POPULAR" badge, Enterprise badge, responsive breakpoints, keyboard focus rings). Then follow-ups from the pricing guide: (1) update `/services/vrv-vrf-maintenance/page.tsx` copy + FAQ explaining per-unit pricing; (2) add Enterprise contact form variant (pre-fill plan=enterprise + extra fields: # properties, # indoor units, current vendor); (3) create internal Excel pricing calculator for sales; (4) standardize Service Agreement template with per-unit listing; (5) set up monthly contract margin tracking (<30% GM triggers renewal renegotiation). Also still pending from prior session: replace AI photos, collect reviews, 3-5 blog posts, Google Business Profile, flip robots.ts to Allow: /.
-**Issues:** none — `next lint` (Next.js 16 removed the command) replaced by `npm run lint` which runs ESLint directly per package.json scripts
+**Done:**
+- `e153bac` — Replaced `src/components/PricingCards.tsx` with 4-tier PMA pricing component (added Enterprise tier; pricing display changed from ranges to "Starting at $X"; Essential $3,600/yr, Professional $6,200/yr, Premium $9,800/yr, Enterprise custom quote; Premium reports cadence changed monthly → quarterly; added per-unit pricing logic disclaimer). +208/-91 lines.
+- `65cf18c` — Installed `lucide-react` dependency (Check/Star/Building2 icons) and bundled prior Session 2026-04-15 session notes into CLAUDE.md. 3 files, +17 lines.
+- `ed14e00` — Added Session 2026-04-18 entry to CLAUDE.md. +6 lines. (Superseded by the current entry.)
+- Verified build health: `npm run lint` (ESLint) clean, `npx tsc --noEmit` clean, `npm run dev` ready in ~1.5s on http://localhost:3000.
+- All three commits pushed to `github/main`.
+**Files changed:** src/components/PricingCards.tsx, package.json, package-lock.json, CLAUDE.md
+**Next:**
+- Visual QA of the new 4-tier PricingCards at `/services/vrv-vrf-maintenance` and homepage PMA section — desktop row-of-4, Professional "MOST POPULAR" badge, Enterprise badge, tablet 2×2 grid, mobile stack, keyboard focus rings (#3288C0).
+- Follow-ups from the 4-tier pricing rollout: update `/services/vrv-vrf-maintenance/page.tsx` copy to match the new tiers and add an FAQ explaining per-unit pricing; add an Enterprise contact-form variant that pre-fills `plan=enterprise` and collects # properties, # indoor units, current vendor; build an internal Excel pricing calculator for sales use; standardize the Service Agreement template to list each outdoor + indoor unit; set up monthly contract margin tracking (<30% GM flags renewal renegotiation).
+- Carryover from 2026-04-15: replace AI-generated photos with real photography, collect and publish first client reviews, write 3–5 blog posts via `/seo-content`, set up Google Business Profile, flip `src/app/robots.ts` from noindex to `Allow: /` when ready to open indexing.
+- Post-launch cadence: weekly `/seo-content`, monthly `/seo-technical` + `/seo-keywords` + `/seo-backlinks`.
+**Issues:** none. Side note: `npx next lint` fails under Next.js 16 (command removed upstream) — the project's `npm run lint` script runs ESLint directly per package.json, which is the correct path forward.
 
 ### Session 2026-04-15
 **Done:** Added complete favicon set from realfavicongenerator (favicon.ico, 16x16, 32x32, apple-touch-icon, android-chrome 192/512, site.webmanifest) and wired them into the root layout; removed the legacy `src/app/favicon.ico`. Fine-tuned hero spacing across the top of the homepage (removed extra whitespace between header and hero, added small top padding, then reduced it slightly). Also updated CLAUDE.md session notes after full deployment from the earlier part of the day.
