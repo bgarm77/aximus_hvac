@@ -217,7 +217,7 @@ function PricingCard({ tier }: { tier: PricingTier }) {
       <div className="my-5 border-t border-[#D7E2EE]" aria-hidden="true" />
 
       {/* Features list */}
-      <ul className="flex-1 space-y-2" aria-label={`${tier.name} plan features`}>
+      <ul className="flex-1 space-y-1.5" aria-label={`${tier.name} plan features`}>
         {tier.features.map((feature, idx) => (
           <li key={idx} className="flex items-start gap-2.5">
             <Check
