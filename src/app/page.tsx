@@ -197,7 +197,7 @@ export default function HomePage() {
 
       {/* 1. HERO */}
       <section className="relative bg-[linear-gradient(180deg,#FFFFFF_0%,#F5FAFF_100%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-20 sm:pt-24 sm:pb-28 min-h-[560px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 pb-20 sm:pt-12 sm:pb-28 min-h-[560px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-light/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
               VRF Service Orange County
@@ -327,20 +327,9 @@ export default function HomePage() {
       <ProcessSteps />
 
       {/* 5. PMA TEASER */}
-      <section aria-labelledby="pma-heading">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 -mb-8">
-          <div className="max-w-2xl">
-            <h2 id="pma-heading" className="text-3xl sm:text-4xl font-bold text-navy">
-              Preventive Maintenance Plans That Protect Your Investment
-            </h2>
-            <p className="mt-3 text-text-secondary">
-              Scheduled visits, priority response, and written reports. Pick the tier that matches
-              your uptime requirements.
-            </p>
-          </div>
-        </div>
-        <PricingCards />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-4 -mt-6 text-center">
+      <PricingCards />
+      <section aria-label="Maintenance plan details link">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-center">
           <Link
             href="/services/vrv-vrf-maintenance"
             className="inline-flex items-center gap-1 text-sm font-semibold text-blue hover:text-navy"
