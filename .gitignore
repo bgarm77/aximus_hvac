@@ -44,3 +44,6 @@ next-env.d.ts
 screenshots/
 test-results/
 playwright-report/
+
+# local image-enhancement tooling (Real-ESRGAN binaries + models)
+tools/realesrgan/
