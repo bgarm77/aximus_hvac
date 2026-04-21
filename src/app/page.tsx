@@ -225,7 +225,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_28px_rgba(10,33,71,0.12)] border border-card-border">
+            <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_28px_rgba(10,33,71,0.12)] border border-card-border mx-auto max-w-[90%]">
               <Image
                 src="/images/home/hero.webp"
                 alt="Commercial VRF outdoor unit on building rooftop in Orange County California"
