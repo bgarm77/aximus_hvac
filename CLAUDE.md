@@ -97,6 +97,18 @@ HVAC contractors in California.
 Pages are toggled via src/config/navigation.ts
 Set enabled: false to hide from nav menu + sitemap but keep the code ready.
 
+## Blog Post Defaults (do not re-ask)
+When creating a new blog post, assume these defaults unless the user says otherwise:
+- **Author:** `Aximus HVAC Team` (frontmatter `author` field)
+- **Date:** today's date in ISO format (`YYYY-MM-DD`)
+- **Hero image (`ogImage`):** Claude picks the best fit from `public/images/blog/` for the topic. Document the choice in the commit message.
+- **Frontmatter schema:** authoritative from `src/lib/blog.ts` — fields: `title`, `description`, `date`, `author?`, `keywords?` (array, NOT comma-string), `ogImage?`, `faqs?` (array of `{q, a}`)
+- **Body structure:** NO H1 in body (template renders H1 from `title`). Start with intro paragraph, then H2/H3 sections every 200–300 words.
+- **Length:** 1500–2000 words.
+- **Internal links:** at least 2–3 to service pages (topical hub).
+- **Voice:** `/content-voice` skill — engineer not salesman, American English, specific numbers, no marketing fluff.
+- **Inline hero image:** add `<img src="/images/blog/FILENAME.webp" alt="..." className="rounded-2xl my-8 w-full" width="1600" height="900" />` after the intro — the blog template does NOT render ogImage inline, only for OpenGraph.
+
 ## Advanced SEO Skills (use after deployment)
 
 ### Available Skills
