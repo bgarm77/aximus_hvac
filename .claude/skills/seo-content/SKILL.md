@@ -47,6 +47,10 @@ keywords: "primary keyword, secondary keyword 1, secondary keyword 2"
    - Include primary keyword in first 2 sentences
    - Tell reader exactly what they will learn
    - No fluff, get to the point immediately
+   - The first 2–3 sentences MUST directly answer the main question
+   - Do NOT start with general explanations
+   - Start with a real-world problem (system failure, tenant complaints, downtime, cost issue)
+   - Throughout the article, weave in business consequences naturally (downtime, tenant complaints, warranty risk, cost). Do not isolate these in a single section — connect them to each technical point.
 
 2. **Main Body** (800-1200 words)
    - 3-5 H2 sections with descriptive subheadings
@@ -54,11 +58,17 @@ keywords: "primary keyword, secondary keyword 1, secondary keyword 2"
    - Include specific data, numbers, California context
    - Reference real brands: Daikin, Mitsubishi, LG, Samsung
    - Short paragraphs — max 3-4 sentences
+   - Each section must answer a clear question
+   - Content must move forward logically (no repetition)
+   - Include real examples or situations where possible
+   - Avoid generic explanations
 
 3. **Practical Section** (200-300 words)
-   - Checklist, step-by-step, or decision guide
-   - Something reader can actually use immediately
-   - Position as expert resource
+   - Must include:
+     - when the issue becomes serious
+     - what the reader can check
+     - when to call a technician
+   - Focus on decision-making, not just instructions
 
 4. **FAQ Section** (4-6 questions)
    - Answer questions real facility managers ask
@@ -68,7 +78,41 @@ keywords: "primary keyword, secondary keyword 1, secondary keyword 2"
 5. **Conclusion + CTA** (100-150 words)
    - Summarize key takeaways in 2-3 points
    - Natural transition to contacting AXIMUS
-   - CTA: "Schedule a Free VRF System Assessment"
+   - CTA must match the problem discussed
+   - CTA can include urgency and action
+   - Examples:
+     - Call now for VRF repair
+     - Book a same-day diagnostic
+     - Schedule a site visit
+   - Do NOT use generic CTAs like:
+     - Contact us today
+     - Learn more
+
+### Readability Rules (MANDATORY)
+- Paragraphs must be 2–3 sentences max
+- Sentences must be short and clear
+- Avoid complex wording when simple words work
+- Do not repeat the same idea
+- Content should be easy to scan in under 3 minutes
+- Technical terms must be explained in plain English
+- Write for facility managers, not HVAC engineers
+
+### Tone (MANDATORY)
+- Write like explaining to a busy facility manager
+- Get to the point fast
+- Avoid academic or textbook tone
+
+### Anti-Filler Rules (MANDATORY)
+- Do NOT write just to reach word count
+- Avoid generic phrases like:
+  - "VRF systems are widely used"
+  - "In today's world"
+- Every paragraph must add new information
+
+### Length
+- Write only as long as needed to fully answer the question
+- Typical range: 1000–1800 words
+- Shorter is acceptable if complete
 
 ### Internal Links (MANDATORY)
 - Minimum 2 links to service pages with descriptive anchor text
