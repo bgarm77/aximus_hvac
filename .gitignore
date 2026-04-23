@@ -47,3 +47,6 @@ playwright-report/
 
 # local image-enhancement tooling (Real-ESRGAN binaries + models)
 tools/realesrgan/
+
+# local pre-edit file backups
+.backups/
