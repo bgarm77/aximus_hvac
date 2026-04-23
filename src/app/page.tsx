@@ -7,6 +7,7 @@ import PricingCards from "@/components/PricingCards";
 import SampleReportCTA from "@/components/SampleReportCTA";
 import ServiceAreaMap from "@/components/ServiceAreaMap";
 import ContactForm from "@/components/ContactForm";
+import { safeJsonLd } from "@/lib/safeJsonLd";
 
 const PHONE_DISPLAY = "(800) 555-1234";
 const PHONE_HREF = "tel:+18005551234";
@@ -188,11 +189,11 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(localBusinessSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(faqSchema) }}
       />
 
       {/* 1. HERO */}

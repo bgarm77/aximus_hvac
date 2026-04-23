@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import TrustStrip from "@/components/TrustStrip";
+import { safeJsonLd } from "@/lib/safeJsonLd";
 
 const PHONE_DISPLAY = "(800) 555-1234";
 const PHONE_HREF = "tel:+18005551234";
@@ -117,11 +118,11 @@ export default function ContactPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(contactSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(faqSchema) }}
       />
 
       {/* 1. HERO */}

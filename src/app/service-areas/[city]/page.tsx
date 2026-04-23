@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import TrustStrip from "@/components/TrustStrip";
 import { getActiveServiceAreas, getServiceArea } from "@/config/service-areas";
 import { getServiceAreaDetails } from "@/config/service-area-details";
+import { safeJsonLd } from "@/lib/safeJsonLd";
 
 const PHONE_DISPLAY = "(800) 555-1234";
 const PHONE_HREF = "tel:+18005551234";
@@ -12,6 +13,8 @@ const SITE_URL = "https://aximushvac.com";
 interface CityPageProps {
   params: Promise<{ city: string }>;
 }
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return getActiveServiceAreas().map((a) => ({ city: a.slug }));
@@ -128,11 +131,11 @@ export default async function CityPage({ params }: CityPageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(serviceSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbSchema) }}
       />
 
       {/* 1. HERO */}

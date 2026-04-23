@@ -1,3 +1,5 @@
+import { safeJsonLd } from "@/lib/safeJsonLd";
+
 const SITE_URL = "https://aximushvac.com";
 
 const schema = {
@@ -95,7 +97,7 @@ export default function LocalBusinessSchema() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 }

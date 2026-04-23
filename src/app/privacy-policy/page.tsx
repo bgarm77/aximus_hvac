@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { safeJsonLd } from "@/lib/safeJsonLd";
 
 const PHONE_DISPLAY = "(800) 555-1234";
 const PHONE_HREF = "tel:+18005551234";
@@ -49,7 +50,7 @@ export default function PrivacyPolicyPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(privacySchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(privacySchema) }}
       />
 
       {/* 1. HERO */}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, formatDate, type BlogPostMeta } from "@/lib/blog";
+import { safeJsonLd } from "@/lib/safeJsonLd";
 
 const SITE_URL = "https://aximushvac.com";
 const PHONE_DISPLAY = "(800) 555-1234";
@@ -169,7 +170,7 @@ export default async function BlogIndexPage({ searchParams }: BlogListPageProps)
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(blogSchema) }}
       />
 
       {/* HERO */}

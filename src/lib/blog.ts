@@ -23,6 +23,7 @@ export interface BlogPost extends BlogPostMeta {
 }
 
 const BLOG_DIR = path.join(process.cwd(), "src", "content", "blog");
+const VALID_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function readDirSafe(): string[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
@@ -54,6 +55,7 @@ export function getAllPosts(): BlogPostMeta[] {
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
+  if (!VALID_SLUG.test(slug)) return null;
   const candidates = [
     path.join(BLOG_DIR, `${slug}.mdx`),
     path.join(BLOG_DIR, `${slug}.md`),
