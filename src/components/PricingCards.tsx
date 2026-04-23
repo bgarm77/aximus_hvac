@@ -139,9 +139,11 @@ export default function PricingCards() {
             Starting prices apply to a single VRF system with up to 4 indoor units.
             Final pricing is based on the number of outdoor condensers and indoor fan
             coil units serviced. Free on-site assessment included before contract.
+          </p>
+          <p className="text-xs leading-relaxed text-[#264261]/80">
             Refrigerant beyond included allowance is billed at distributor cost + 25%.
-            Pricing valid for properties within Orange County service area.
-            Portfolio discounts (8–15%) available for 3+ properties under a single MSA.
+            Pricing valid for properties within Orange County service area. Portfolio
+            discounts (8–15%) available for 3+ properties under a single MSA.
           </p>
           <p className="text-sm font-medium text-[#124E88]">
             Why our pricing is transparent: VRF maintenance work scales with the number

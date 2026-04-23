@@ -203,7 +203,7 @@ export default function HomePage() {
               VRF Service Orange County
             </span>
             <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.1]">
-              Orange County&apos;s Only Dedicated VRF/VRV Service Specialist
+              Orange County&apos;s Dedicated VRF/VRV Service Specialist
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl">
               Factory-Certified Daikin VRV &amp; Mitsubishi Electric Service. 4-Hour Emergency

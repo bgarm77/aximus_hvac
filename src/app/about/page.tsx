@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     q: "Why VRF only? Don't most HVAC companies cover everything?",
-    a: "Most do, and that's the problem. VRF is a different platform — inverter-driven compressors, refrigerant branch controllers, multi-unit communication networks, brand-specific diagnostic protocols. A generalist who services split systems on Monday and boilers on Tuesday can't carry the depth a Daikin VRV IV or Mitsubishi City Multi system needs. We chose to specialize so we're the best at one thing.",
+    a: "Most do, and that's the problem. VRF is a different platform — inverter compressors, branch controllers (the boxes that route refrigerant to each zone), multi-unit communication networks, and brand-specific diagnostic protocols. A generalist who services split systems on Monday and boilers on Tuesday can't carry the depth a Daikin VRV IV or Mitsubishi City Multi system needs. We chose to specialize so we're the best at one thing.",
   },
   {
     q: "Where are you based and where do you serve?",
@@ -197,9 +197,9 @@ export default function AboutPage() {
           <div className="mt-6 space-y-5 text-text-secondary leading-relaxed">
             <p>
               Aximus was founded by a commercial HVAC and MEP engineer with 15 years in the
-              field — most of them spent on large Daikin VRV and Mitsubishi City Multi systems
-              across Southern California office towers, medical buildings, and mixed-use
-              properties.
+              field. Most of those years went to large Daikin VRV and Mitsubishi City Multi
+              systems across Southern California — office towers, medical buildings, and
+              mixed-use properties.
             </p>
             <p>
               The same story played out on almost every call. A facility manager had been

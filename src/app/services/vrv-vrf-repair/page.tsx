@@ -105,7 +105,7 @@ const repairSteps: RepairStep[] = [
 const commonIssues = [
   {
     title: "Communication errors",
-    body: "Indoor and outdoor units losing sync. F-series, U-series, or P-series fault codes that a generalist tech can't interpret without calling the OEM.",
+    body: "Indoor and outdoor units losing sync. F-series, U-series, or P-series fault codes (the error code families on Daikin and Mitsubishi controllers) that a generalist tech can't interpret without calling the OEM.",
   },
   {
     title: "Refrigerant leaks",

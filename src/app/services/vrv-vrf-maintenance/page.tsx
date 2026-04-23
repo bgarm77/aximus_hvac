@@ -45,7 +45,7 @@ const whyMaintenance = [
 const visitIncludes = [
   {
     title: "Refrigerant check",
-    body: "Superheat, subcooling, and pressure readings at every outdoor unit. Electronic leak detection on flare joints and coil connections. Documented charge status — not a shrug and a gauge reading.",
+    body: "Superheat and subcooling readings (the two measurements that show whether refrigerant charge is correct) plus pressure data at every outdoor unit. Electronic leak detection on flare joints and coil connections. Documented charge status — not a shrug and a gauge reading.",
   },
   {
     title: "Filter service",
@@ -57,7 +57,7 @@ const visitIncludes = [
   },
   {
     title: "Controls verification",
-    body: "BMS points, setpoints, schedules, and zone communication verified against design. We catch drifted EEV commands and miscommunicated zones before they turn into complaint tickets.",
+    body: "BMS points, setpoints, schedules, and zone communication verified against design. We catch drifted EEV commands (the electronic expansion valves that meter refrigerant to each indoor unit) and miscommunicated zones before they turn into complaint tickets.",
   },
   {
     title: "Performance report",

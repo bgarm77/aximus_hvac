@@ -128,8 +128,8 @@ export default function ServiceAreasPage() {
               Our primary service area is Orange County, California. Technicians dispatch from a
               central Orange County base, which is how we hold a 4-hour emergency response window
               for Premium MSA clients anywhere from Huntington Beach to Anaheim Hills. Los Angeles
-              County and San Diego County coverage is planned for the next phase — contact us if
-              you manage VRF equipment outside our current map and we&apos;ll tell you honestly
+              County and San Diego County coverage is planned for the next phase. If you manage
+              VRF equipment outside our current map, contact us — we&apos;ll tell you honestly
               whether we can help today or only refer.
             </p>
           </div>
