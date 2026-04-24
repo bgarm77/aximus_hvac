@@ -35,14 +35,41 @@ const securityHeaders = [
     key: "Strict-Transport-Security",
     value: "max-age=63072000; includeSubDomains; preload",
   },
+  {
+    key: "Cross-Origin-Opener-Policy",
+    value: "same-origin",
+  },
+  {
+    key: "Cross-Origin-Resource-Policy",
+    value: "same-origin",
+  },
+  {
+    key: "Cross-Origin-Embedder-Policy",
+    value: "unsafe-none",
+  },
 ];
 
 const nextConfig: NextConfig = {
+  // Hide "X-Powered-By: Next.js" — minor info disclosure, no reason to broadcast stack.
+  poweredByHeader: false,
+  reactStrictMode: true,
   async headers() {
     return [
       {
-        source: "/:path*",
+        source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        source: "/_next/static/(.*)",
+        headers: [
+          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+        ],
+      },
+      {
+        source: "/images/(.*)",
+        headers: [
+          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+        ],
       },
     ];
   },
