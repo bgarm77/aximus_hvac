@@ -6,8 +6,8 @@ import { getActiveServiceAreas, getServiceArea } from "@/config/service-areas";
 import { getServiceAreaDetails } from "@/config/service-area-details";
 import { safeJsonLd } from "@/lib/safeJsonLd";
 
-const PHONE_DISPLAY = "(800) 555-1234";
-const PHONE_HREF = "tel:+18005551234";
+const PHONE_DISPLAY = "(000) 000-0000";
+const PHONE_HREF = "tel:+10000000000";
 const SITE_URL = "https://aximushvac.com";
 
 interface CityPageProps {
@@ -95,7 +95,7 @@ export default async function CityPage({ params }: CityPageProps) {
       "@type": "HVACBusiness",
       name: "Aximus HVAC",
       url: SITE_URL,
-      telephone: "+1-800-555-1234",
+      telephone: "+1-000-000-0000",
       address: {
         "@type": "PostalAddress",
         addressLocality: area.city,

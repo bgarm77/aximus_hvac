@@ -4,8 +4,8 @@ import { getAllPosts, formatDate, type BlogPostMeta } from "@/lib/blog";
 import { safeJsonLd } from "@/lib/safeJsonLd";
 
 const SITE_URL = "https://aximushvac.com";
-const PHONE_DISPLAY = "(800) 555-1234";
-const PHONE_HREF = "tel:+18005551234";
+const PHONE_DISPLAY = "(000) 000-0000";
+const PHONE_HREF = "tel:+10000000000";
 const POSTS_PER_PAGE = 9;
 
 export const metadata: Metadata = {

@@ -48,8 +48,8 @@ export default function Footer() {
             <div>Aximus HVAC Solutions, Inc.</div>
             <div>2855 Michelle Drive, Suite 150</div>
             <div>Irvine, CA 92606</div>
-            <a href="tel:+18005551234" className="block hover:text-white">
-              (800) 555-1234
+            <a href="tel:+10000000000" className="block hover:text-white">
+              (000) 000-0000
             </a>
             <a href="mailto:service@aximushvac.com" className="block hover:text-white">
               service@aximushvac.com

@@ -136,7 +136,7 @@ export default function ContactForm() {
       }
     } catch {
       setStatus("error");
-      setErrorMessage("Network error. Please call us at (800) 555-1234.");
+      setErrorMessage("Network error. Please call us at (000) 000-0000.");
     }
   }
 
@@ -153,8 +153,8 @@ export default function ContactForm() {
           A VRF specialist will review your request and reply with next steps —
           usually a short scoping call, then a free site assessment. If your
           system is down right now, call{" "}
-          <a href="tel:+18005551234" className="text-blue font-semibold">
-            (800) 555-1234
+          <a href="tel:+10000000000" className="text-blue font-semibold">
+            (000) 000-0000
           </a>{" "}
           for 4-hour emergency response.
         </p>
@@ -315,10 +315,10 @@ export default function ContactForm() {
         <p className="text-xs text-text-secondary">
           We respond within one business day. Emergency? Call{" "}
           <a
-            href="tel:+18005551234"
+            href="tel:+10000000000"
             className="text-blue font-semibold hover:text-navy"
           >
-            (800) 555-1234
+            (000) 000-0000
           </a>
           .
         </p>

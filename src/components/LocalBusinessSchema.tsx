@@ -11,7 +11,7 @@ const schema = {
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.svg`,
   image: `${SITE_URL}/images/logo.svg`,
-  telephone: "+1-800-555-1234",
+  telephone: "+1-000-000-0000",
   email: "service@aximushvac.com",
   priceRange: "$$",
   description:
@@ -61,14 +61,14 @@ const schema = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+1-800-555-1234",
+      telephone: "+1-000-000-0000",
       contactType: "customer service",
       areaServed: "US-CA",
       availableLanguage: "English",
     },
     {
       "@type": "ContactPoint",
-      telephone: "+1-800-555-1234",
+      telephone: "+1-000-000-0000",
       contactType: "emergency",
       areaServed: "US-CA",
       hoursAvailable: "Mo-Su 00:00-23:59",

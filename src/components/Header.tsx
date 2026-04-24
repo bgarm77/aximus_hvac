@@ -108,10 +108,10 @@ export default function Header() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="tel:+18005551234"
+            href="tel:+10000000000"
             className="text-sm font-semibold text-blue hover:text-navy"
           >
-            (800) 555-1234
+            (000) 000-0000
           </a>
           <Link
             href="/contact"
@@ -123,7 +123,7 @@ export default function Header() {
 
         <div className="flex lg:hidden items-center gap-2">
           <a
-            href="tel:+18005551234"
+            href="tel:+10000000000"
             aria-label="Call Aximus HVAC"
             className="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-blue text-white"
           >

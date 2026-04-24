@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { safeJsonLd } from "@/lib/safeJsonLd";
 
-const PHONE_DISPLAY = "(800) 555-1234";
-const PHONE_HREF = "tel:+18005551234";
+const PHONE_DISPLAY = "(000) 000-0000";
+const PHONE_HREF = "tel:+10000000000";
 const PRIVACY_EMAIL = "privacy@aximushvac.com";
 const SITE_URL = "https://aximushvac.com";
 const LAST_UPDATED = "April 12, 2026";
@@ -36,7 +36,7 @@ const privacySchema = {
     "@type": "HVACBusiness",
     name: COMPANY,
     url: SITE_URL,
-    telephone: "+1-800-555-1234",
+    telephone: "+1-000-000-0000",
     address: {
       "@type": "PostalAddress",
       addressRegion: "CA",

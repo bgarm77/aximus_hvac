@@ -4,8 +4,8 @@ import ContactForm from "@/components/ContactForm";
 import TrustStrip from "@/components/TrustStrip";
 import { safeJsonLd } from "@/lib/safeJsonLd";
 
-const PHONE_DISPLAY = "(800) 555-1234";
-const PHONE_HREF = "tel:+18005551234";
+const PHONE_DISPLAY = "(000) 000-0000";
+const PHONE_HREF = "tel:+10000000000";
 const EMAIL_DISPLAY = "service@aximushvac.com";
 const EMAIL_HREF = "mailto:service@aximushvac.com";
 const SITE_URL = "https://aximushvac.com";
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How fast will I hear back after I submit this form?",
-    a: "Within one business day, usually the same day. If your VRF system is down right now, call (800) 555-1234 — that's the fastest route to a 4-hour emergency dispatch.",
+    a: "Within one business day, usually the same day. If your VRF system is down right now, call (000) 000-0000 — that's the fastest route to a 4-hour emergency dispatch.",
   },
   {
     q: "Do you charge for the initial quote or assessment?",
@@ -68,7 +68,7 @@ const contactSchema = {
     "@type": "HVACBusiness",
     name: "Aximus HVAC",
     url: SITE_URL,
-    telephone: "+1-800-555-1234",
+    telephone: "+1-000-000-0000",
     email: EMAIL_DISPLAY,
     areaServed: [
       { "@type": "AdministrativeArea", name: "Orange County, California" },
@@ -97,14 +97,14 @@ const contactSchema = {
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+1-800-555-1234",
+        telephone: "+1-000-000-0000",
         contactType: "customer service",
         areaServed: "US-CA",
         availableLanguage: "English",
       },
       {
         "@type": "ContactPoint",
-        telephone: "+1-800-555-1234",
+        telephone: "+1-000-000-0000",
         contactType: "emergency",
         areaServed: "US-CA",
         hoursAvailable: "Mo-Su 00:00-23:59",
